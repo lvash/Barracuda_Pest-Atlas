@@ -39,7 +39,9 @@ GBIF.org (25 May 2023) GBIF Occurrence Download  https://doi.org/10.15468/dl.t9c
 ```{r echo=F, message=F}
 library(leaflet)
 
-TABMdata <- read.csv("GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv", sep=",", header=T)
+path <- "/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/Barracuda_Pest-Atlas/"
+
+TABMdata <- read.csv(paste0(path,"GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv"), sep=",", header=T)
 
 TABMpoints <- TABMdata %>%
   dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
@@ -48,13 +50,13 @@ TABMpoints <- TABMdata %>%
 
 library(raster)
 library(viridis)
-current<- raster("TABM_Current_RF-SDM.tif")
+current<- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/TABM_Current_RF-SDM.tif"))
 currAgg <- aggregate(current, fact=2)
 #res(currAgg)
 #length(values(currAgg))
 pal <- viridis(n=3600000, option = "turbo")
 
-future <- raster("TABM_Future_RF-SDM.tif")
+future <- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/TABM_Future_RF-SDM.tif"))
 #plot(future)
 
 futAgg <- aggregate(future, fact=2)

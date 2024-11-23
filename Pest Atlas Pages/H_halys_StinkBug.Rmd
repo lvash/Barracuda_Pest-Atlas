@@ -36,8 +36,9 @@ GBIF.org (22 May 2023) GBIF Occurrence Download https://doi.org/10.15468/dl.f8mb
 
 ```{r echo=F, message=F}
 library(leaflet)
+path <- "/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/Barracuda_Pest-Atlas/"
 
-HhSBdata <- read.csv("/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/PestSp/GBIF_Occurrence/StinkBug_ Halyomorpha_halys/occurrence_H-halys.csv", sep=",", header=T)
+HhSBdata <- read.csv(paste0(path, "GBIF_Occurrence/StinkBug_ Halyomorpha_halys/occurrence_H-halys.csv"), sep=",", header=T)
 
 HhSBpoints <- HhSBdata %>%
   dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
@@ -47,14 +48,15 @@ HhSBpoints <- HhSBdata %>%
 
 library(raster)
 library(viridis)
-current<- raster("HhSB_Current_RF-SDM_update.tif")
+current<- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/HhSB_Current_RF-SDM_update.tif"))
 #currAgg <- aggregate(current, fact=2)
 #res(currAgg)
 #length(values(currAgg))
 #pal <- viridis(n=3600000, option = "turbo")
 
-future <- raster("HhSB_Future_RF-SDM_update.tif")
+future <- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/HhSB_Future_RF-SDM_update.tif"))
 
+#remotes::install_github('peterbat1/fitMaxnet')
 library(fitMaxnet)
 bioLayer <- raster(current) 
 thinnedPoints <- fitMaxnet::removeDuplicates(data = HhSBpoints, baseGrid=bioLayer, byGrid=T)

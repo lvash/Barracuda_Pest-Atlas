@@ -53,7 +53,9 @@ Records were downloaded from [GBIF](https://www.gbif.org/species/1920496) and fi
 ```{r echo=F, message=F}
 library(leaflet)
 
-PrCWdata <- read.csv("GBIF_Occurrence/Cabbage_white_Pieris_rapae/occurrence_P_rapae.csv", header=T)
+path <- "/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/Barracuda_Pest-Atlas/"
+
+PrCWdata <- read.csv(paste0(path,"GBIF_Occurrence/Cabbage_white_Pieris_rapae/occurrence_P_rapae.csv"), header=T)
 
 PrCWpoints <- PrCWdata %>%
   dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
@@ -63,12 +65,12 @@ PrCWpoints <- PrCWdata %>%
 
 library(raster)
 library(viridis)
-current<- raster("PrCW_Current_RF-SDM.tif")
+current<- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/PrCW_Current_RF-SDM.tif"))
 currAgg <- aggregate(current, fact=2)
 #res(currAgg)
 #length(values(currAgg))
 
-future <- raster("PrCW_Future_RF-SDM.tif")
+future <- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/PrCW_Future_RF-SDM.tif"))
 #plot(future)
 
 futAgg <- aggregate(future, fact=2)

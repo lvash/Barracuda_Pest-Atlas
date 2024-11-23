@@ -11,7 +11,7 @@ output: rmdformats::readthedown
 }
 </style>
 
-## [Codling Moth (*Cydia pomonella*)](https://rpubs.com/lvash/C_pomonella)
+## [Codling Moth (*Cydia pomonella*)](https://rpubs.com/lvash/Cydia_pomonella)
  
 ![Codling Moth Larva [source](https://extension.usu.edu/pests/ipm/notes_ag/fruit-codling-moth)](https://extension.usu.edu/pests/ipm/images/agricultural/fruit/cm-larva.jpg){width=40%}
 

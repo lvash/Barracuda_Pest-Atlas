@@ -11,9 +11,10 @@ output: html_document
 }
 </style>
  
-![Spotted Lanternflies](https://www.agriculture.pa.gov/Plants_Land_Water/PlantIndustry/Entomology/spotted_lanternfly/SpottedLanternflyAlert/PublishingImages/Pages/default/Spotted%20Lanternfly%20Infestation%20on%20Tree.jpg){width=30%} ![Life Cycle](https://web.uri.edu/wp-content/uploads/sites/48/2020/01/image019.jpg){width=50%}
+![Spotted Lanternflies](https://www.bartlett.com/blog/wp-content/uploads/2024/08/spotted-lanternflies-scaled.jpeg){width=30%} 
+![Life Cycle](https://web.uri.edu/biocontrol/wp-content/uploads/sites/2154/SLF_Lifecycle.jpg){width=50%}
 
-Pictures from [Pennsylvania Dept. of Agriculture](https://www.agriculture.pa.gov/Plants_Land_Water/PlantIndustry/Entomology/spotted_lanternfly/SpottedLanternflyAlert/Pages/default.aspx)  and [University of Rhode Island](https://web.uri.edu/biocontrol/spotted-lanternfly/slf-distribution-identification-life-cycle/)
+Pictures from [Bartlett Tree Experts](https://www.bartlett.com/blog/spotted-lanternfly-control-treatment/)  and [University of Rhode Island](https://web.uri.edu/biocontrol/spotted-lanternfly/slf-distribution-identification-life-cycle/)
    
 
 
@@ -35,7 +36,9 @@ GBIF.org (25 May 2023) GBIF Occurrence Download  https://doi.org/10.15468/dl.hxk
 ```{r echo=F, message=F}
 library(leaflet)
 
-LdSLdata <- read.csv("GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv", sep=",", header=T)
+path <- "/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/Barracuda_Pest-Atlas/"
+
+LdSLdata <- read.csv(paste0(path,"GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv"), sep=",", header=T)
 
 LdSLpoints <- LdSLdata %>%
   dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
@@ -44,13 +47,13 @@ LdSLpoints <- LdSLdata %>%
 
 library(raster)
 library(viridis)
-current<- raster("LdSL_Current_RF-SDM.tif")
+current<- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/LdSL_Current_RF-SDM.tif"))
 currAgg <- aggregate(current, fact=2)
 #res(currAgg)
 #length(values(currAgg))
 pal <- viridis(n=3600000, option = "turbo")
 
-future <- raster("LdSL_Future_RF-SDM.tif")
+future <- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/LdSL_Future_RF-SDM.tif"))
 #plot(future)
 
 futAgg <- aggregate(future, fact=2)

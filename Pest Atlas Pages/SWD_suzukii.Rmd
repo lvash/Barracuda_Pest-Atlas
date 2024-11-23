@@ -51,8 +51,9 @@ Records were downloaded from [GBIF](https://www.gbif.org/species/5073820) and fi
 
 ```{r echo=F, message=F}
 library(leaflet)
+path <- "/Users/lvash/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Research/Barracuda_Pest-Atlas/"
 
-SWDdata <- read.csv("GBIF_Occurrence/SWD_Drosophila_suzukii/occurrence_D_suzukii.csv", header=T)
+SWDdata <- read.csv(paste0(path,"GBIF_Occurrence/SWD_Drosophila_suzukii/occurrence_D_suzukii.csv"), header=T)
 
 SWDpoints <- SWDdata %>%
   dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
@@ -61,12 +62,12 @@ SWDpoints <- SWDdata %>%
 
 library(raster)
 library(viridis)
-current<- raster("SWD_Current_RF-SDM.tif")
+current<- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/SWD_Current_RF-SDM.tif"))
 currAgg <- aggregate(current, fact=2)
 #res(currAgg)
 #length(values(currAgg))
 
-future <- raster("SWD_Future_RF-SDM.tif")
+future <- raster(paste0(path,"Pest Atlas Pages/Predicted Distribution Maps/SWD_Future_RF-SDM.tif"))
 #plot(future)
 
 futAgg <- aggregate(future, fact=2)
