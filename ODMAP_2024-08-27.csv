@@ -1,0 +1,85 @@
+section,subsection,element,Value
+Overview,Authorship,Study title,Barracuda Pest Species Atlas
+Overview,Authorship,Author names,Lauren Ash; Nicholas Gotelli; Brian McGill
+Overview,Authorship,Contact ,brimcgill@gmail.com
+Overview,Authorship,Study link,https://github.com/lvash/Barracuda_Pest-Atlas
+Overview,Model objective,Model objective,Mapping and interpolation
+Overview,Model objective,Target output,Continuous habitat suitability
+Overview,Focal Taxon,Focal Taxon,Agricultural pest species: Cydia pomonella; Halyomorpha halys; Lycorma delicatula; Pieris rapae; Platynota idaeusalis; Drosophila suzukii
+Overview,Location,Location,Eastern United States
+Overview,Scale of Analysis,Spatial extent," -100.000139209, -60.000139369, 24.999860651, 49.999860551 (xmin, xmax, ymin, ymax)"
+Overview,Scale of Analysis,Spatial resolution,1 km
+Overview,Scale of Analysis,Temporal extent,1981-2010 for current distribution and 2041-2070 for future distribution
+Overview,Scale of Analysis,Temporal resolution,30 years
+Overview,Scale of Analysis,Boundary,rectangle; political
+Overview,Biodiversity data,Observation type,Citizen science
+Overview,Biodiversity data,Response data type,Presence-only
+Overview,Predictors,Predictor types,Climatic
+Overview,Hypotheses,Hypotheses,Pest species ranges are shifting with climate change
+Overview,Assumptions,Model assumptions,"We assumed that species are at equilibrium with the environment. Niche stability, training samples are representative of environmental conditions in native range, climatic conditions between training and introduced areas are analogous"
+Overview,Algorithms,Modelling techniques,randomForest
+Overview,Algorithms,Model complexity,We used the caret package in R to tune therandom forest models' parameters.  
+Overview,Algorithms,Model averaging,NA
+Overview,Workflow,Model workflow,"Hyperparameter tuning with a 5-fold cross validation was conducted for all species models on a training data set (80% of data). After we identified the best mtry parameter, we used the full dataset for the final model."
+Overview,Software,Software,R
+Overview,Software,Code availability,https://github.com/lvash/Barracuda_Pest-Atlas
+Overview,Software,Data availability,https://github.com/lvash/Barracuda_Pest-Atlas
+Data,Biodiversity data,Taxon names,Cydia pomonella; Halyomorpha halys; Lycorma delicatula; Pieris rapae; Platynota idaeusalis; Drosophila suzukii
+Data,Biodiversity data,Taxonomic reference system,Standard biological taxonomy 
+Data,Biodiversity data,Ecological level,populations
+Data,Biodiversity data,Data sources,"GBIF (iNaturalist research-grade observations) - Cydia pomonella: https://doi.org/10.15468/dl.25ct44 ; Pieris rapae: https://doi.org/10.15468/dl.8ycbhg ; Drosophila suzukii https://doi.org/10.15468/dl.34hrka; the other 3 had the same search terms, but the DOIs did not get saved "
+Data,Biodiversity data,Sampling design,NA
+Data,Biodiversity data,Sample size,Cydia pomonella (N=294); Pieris rapae (N=29472); Drosophila suzukii (N=); Halyomorpha halys (N=8585); Lycorma delicatula (N=8168); Platynota idaeusalis (N=496)
+Data,Biodiversity data,Clipping,NA
+Data,Biodiversity data,Scaling,NA
+Data,Biodiversity data,Cleaning,See filters included in Data sources
+Data,Biodiversity data,Absence data,NA
+Data,Biodiversity data,Background data,"We used the R package terra's spatSample function to create background points (N=10,000)"
+Data,Biodiversity data,Errors and biases,Occurrence points represent many different sampling methods and research groups across time
+Data,Data partitioning,Training data,We created a 80% partition of the full data set to train the models.
+Data,Data partitioning,Validation data,We performed random 5-fold cross-validations in the model training thorough the R package caret 
+Data,Data partitioning,Test data,The remaining 20% of the data not used in training served to test and evaluate the models
+Data,Predictor variables,Predictor variables,"CHELSA Bioclim +: ""bio1""     ""bio10""    ""bio11""    ""bio12""  ""bio13""    ""bio14""    ""bio15""    ""bio16""   ""bio17""    ""bio18""    ""bio19""    ""bio2""   ""bio3""     ""bio4""     ""bio5""     ""bio6""    ""bio7""     ""bio8""     ""bio9""     ""fcf""      ""fgd""      ""gdd0""     ""gdd10""    ""gdd5""    ""gddlgd0""  ""gddlgd10"" ""gddlgd5""  ""gdgfgd0"" ""gdgfgd10"" ""gdgfgd5""  ""gsl""      ""gsp""     ""gst""      ""kg0""      ""kg1""      ""kg2""     ""kg3""      ""kg4""      ""kg5""      ""lgd""      ""ngd0""     ""ngd10""    ""ngd5""     ""npp""   ""scd""      ""swe"""
+Data,Predictor variables,Data sources,https://chelsa-climate.org/exchelsa-extended-bioclim/
+Data,Predictor variables,Spatial extent,"-100.00013920885, -60.00013936885, 24.99986065115, 49.99986055115"
+Data,Predictor variables,Spatial resolution,1 km
+Data,Predictor variables,Coordinate reference system,WGS84
+Data,Predictor variables,Temporal extent,1981-2010 for current distribution and 2041-2070 for future distribution
+Data,Predictor variables,Temporal resolution,30 years
+Data,Predictor variables,Data processing,"We chose to use bioclimatic predictors from CHELSA since their ÔBioClim+Õ variables are high resolution and include more than the standard bioclimatic variables, 1-19. Individual covariates were then chosen based on whether the CHELSA Bioclim+ predictors were also available for the future scenarios.We extracted data at our occurrence points for the 40 CHELSA Bioclim + variables and removed predictors with greater than 20% NAs: 10 variables for both species: fcf, fgd, gddlgd0,Ê gddlgd10, gddlgd5,Ê gdgfgd0, gdgfgd10, gdgfgd5, lgd, and swe. Predictor variable information can be found at <https://chelsa-climate.org/exchelsa-extended-bioclim/>. The final 36 CHELSA Bioclim+ variables were: bio 1-19, gdd0, gdd10, gdd5, gsl, gsp, gst, kg0-kg5, ngd0, ngd10, ngd5, npp, and scd. For the mid (2041-2070) future predictors, we chose the GFDL-ESM4 Earth System models for the shared socioeconomic pathway SSP585. We chose SSP585 as it represents a worst case scenario that seems increasingly likely in the near future.Ê"
+Data,Predictor variables,Errors and biases,"The spatial observation density for presence data varies throughout the study area, resulting in over- or underrepresented areas "
+Data,Predictor variables,Dimension reduction,NA
+Data,Transfer data,Data sources,CHELSA Bioclim+ SSP 585; GFDL-ESM4 climate model; 2041-2070
+Data,Transfer data,Spatial extent," -100.000139209, -60.000139369, 24.999860651, 49.999860551 (xmin, xmax, ymin, ymax)"
+Data,Transfer data,Spatial resolution,1km
+Data,Transfer data,Temporal extent,2041-2070
+Data,Transfer data,Temporal resolution,30 years
+Data,Transfer data,Models and scenarios,SSP 585 GFDL-ESM4
+Data,Transfer data,Data processing,We used the same code and methods to process the future predictor layers
+Data,Transfer data,Quantification of Novelty,NA
+Model,Variable pre-selection,Variable pre-selection,None
+Model,Multicollinearity,Multicollinearity,NA
+Model,Model settings,Model settings (fitting),randomForest (mtry=2) 
+Model,Model settings,Model settings (extrapolation),We used the current model to predict to near  future projections (2041-2070)
+Model,Model estimates,Coefficients,NA
+Model,Model estimates,Parameter uncertainty,There was no resampling to quantify parameter uncertainty.
+Model,Model estimates,Variable importance,We used the varImpPlot function in the randomForest R package to determine variable importance for each species
+Model,Model selection - model averaging - ensembles,Model selection,NA
+Model,Model selection - model averaging - ensembles,Model averaging,NA
+Model,Model selection - model averaging - ensembles,Model ensembles,NA
+Model,Analysis and Correction of non-independence,Spatial autocorrelation,NA
+Model,Analysis and Correction of non-independence,Temporal autocorrelation,NA
+Model,Analysis and Correction of non-independence,Nested data,NA
+Model,Threshold selection,Threshold selection,"None, we did not threshold"
+Assessment,Performance statistics,Performance on training data,Performed a 5-fold cross validaton on training samples.  AUC-ROC was computed to measure model performance to determine best parameter via caret's train function
+Assessment,Performance statistics,Performance on validation data,NA
+Assessment,Performance statistics,Performance on test data,Calculated the AUC-ROC and max TPR+TNR using the evaluate function in the dismo R package
+Assessment,Plausibility check,Response shapes,Response curves were not generated
+Assessment,Plausibility check,Expert judgement,NA
+Prediction,Prediction output,Prediction unit,Probability of habitat suitability
+Prediction,Prediction output,Post-processing,NA
+Prediction,Uncertainty quantification,Algorithmic uncertainty,NA
+Prediction,Uncertainty quantification,Input data uncertainty,NA
+Prediction,Uncertainty quantification,Parameter uncertainty,NA
+Prediction,Uncertainty quantification,Scenario uncertainty,NA
+Prediction,Uncertainty quantification,Novel environments,NA
