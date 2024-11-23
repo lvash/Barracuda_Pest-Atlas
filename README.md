@@ -8,9 +8,9 @@ We predicted the range shift of 5 agricultural pest species:
 * Tufted Apple Bud Moth (*Platynota idaeusalis*)  
 * Spotted wing *Drosophila* (*D. suzukii*)  
 
-Files and folders within this repository:
+### Files and folders within this repository:
 
-The **ODMap file** contains specifics about the project, predictors, and modeling process. 
+The **ODMap csv file** contains specifics about the project, predictors, and modeling process and follows the format of [ODMAP (Overview, Data, Model, Assessment and Prediction) protocol](https://odmap.wsl.ch/). 
 
 Occurrence data for each species were obtained via iNaturalist GBIF Research-grade observations and are located in the **GBIF_Occurrence folder.**
 Climatic predictors for current (1981-2010) and future (2041-2070) decades were obtained from [CHELSA BioClim + ](https://chelsa-climate.org/exchelsa-extended-bioclim/ and cropped and processed in the Raster-Processing.R script within the **Model Scripts folder.** Each species has its own script within that folder which uses occurrence data to train/test/predict and plots the current and future distributions using a Random Forest model. 
