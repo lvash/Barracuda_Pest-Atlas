@@ -17,4 +17,4 @@ Climatic predictors for current (1981-2010) and future (2041-2070) decades were 
 
 Predicted Distribution Maps were saved within the **Pest Atlas Pages folder** and used to create RMarkdown and html pages for each species within the same folder. The pages were converted to Rpubs and stored in the **rsconnect folder** within the Pest Atlas Pages folder.
 
-The home page of the Pest Atlas can be found (here)[https://rpubs.com/lvash/Pest_Atlas_Home] 
+The home page of the Pest Atlas can be found [here](https://rpubs.com/lvash/Pest_Atlas_Home).
