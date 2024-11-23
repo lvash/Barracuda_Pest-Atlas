@@ -1,0 +1,151 @@
+---
+title: "Spotted Lanternfly (*Lycorma delicatula*)"
+author: "Pest species atlas"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+ 
+![Spotted Lanternflies](https://www.agriculture.pa.gov/Plants_Land_Water/PlantIndustry/Entomology/spotted_lanternfly/SpottedLanternflyAlert/PublishingImages/Pages/default/Spotted%20Lanternfly%20Infestation%20on%20Tree.jpg){width=30%} ![Life Cycle](https://web.uri.edu/wp-content/uploads/sites/48/2020/01/image019.jpg){width=50%}
+
+Pictures from [Pennsylvania Dept. of Agriculture](https://www.agriculture.pa.gov/Plants_Land_Water/PlantIndustry/Entomology/spotted_lanternfly/SpottedLanternflyAlert/Pages/default.aspx)  and [University of Rhode Island](https://web.uri.edu/biocontrol/spotted-lanternfly/slf-distribution-identification-life-cycle/)
+   
+
+
+### Background 
+
+The Spotted Lanternfly (*Lycorma delicatula*), an invasive pest native to China, was first identified in Pennsylvania in September 2014. This pest has a broad dietary range, feeding on numerous fruit, ornamental, and woody trees, particularly favoring the invasive tree-of-heaven (*Ailanthus altissima*). It can spread over long distances when people move materials or items infested with egg masses.
+
+Juvenile Spotted Lanternflies, known as nymphs, and adults feed on an array of crops and plants, including, but not limited to, almonds, apples, apricots, cherries, grapes, hops, maple trees, nectarines, oak trees, peaches, pine trees, plums, poplar trees, sycamore trees, walnut trees, and willow trees. The feeding habits of both nymphs and adults inflict significant damage to these plants.
+
+When feeding, Spotted Lanternflies suck sap from stems and branches, reducing photosynthesis and weakening the plant, which can eventually lead to the plant's death. Furthermore, their feeding often results in the plant oozing or weeping, giving off a fermented odor. These insects also excrete substantial amounts of fluid known as honeydew, which can promote mold growth and attract other insects, exacerbating the issue. Potential climate change effects, including shifts in temperature and precipitation patterns, may alter the geographic distribution of the Spotted Lanternfly. Such changes could enable the pest to establish in new regions, amplifying concerns in agriculture and forestry sectors.
+
+For more information, visit the [USDA](https://www.aphis.usda.gov/aphis/resources/pests-diseases/hungry-pests/the-threat/spotted-lanternfly/spotted-lanternfly) website or view their [Pest Alert](https://www.aphis.usda.gov/publications/plant_health/alert-spotted-lanternfly.pdf)
+
+## Data collected from Global Biodiversity Information Facility (GBIF)
+
+Records were downloaded from [GBIF](https://www.gbif.org/species/5157899) and filtered to include only iNaturalist research-grade observations.   
+GBIF.org (25 May 2023) GBIF Occurrence Download  https://doi.org/10.15468/dl.hxkqzb
+
+```{r echo=F, message=F}
+library(leaflet)
+
+LdSLdata <- read.csv("GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv", sep=",", header=T)
+
+LdSLpoints <- LdSLdata %>%
+  dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
+
+## The tif files were all moved to the Predicted Distribution Maps folder and the paths would need to be updated if re-run
+
+library(raster)
+library(viridis)
+current<- raster("LdSL_Current_RF-SDM.tif")
+currAgg <- aggregate(current, fact=2)
+#res(currAgg)
+#length(values(currAgg))
+pal <- viridis(n=3600000, option = "turbo")
+
+future <- raster("LdSL_Future_RF-SDM.tif")
+#plot(future)
+
+futAgg <- aggregate(future, fact=2)
+#res(futAgg)
+#length(values(futAgg))
+```
+
+## Predicted Current and Future Habitat Suitability (0-1) of Spotted Lanternfly using research-grade iNaturalist observations
+
+The raster layers of this map are the predicted current and future habitat suitability of Spotted Lanternflys, with low predicted suitability in blue, increasing suitability in green and then yellow, and highest suitability in orange and red. 
+
+```{include = F}
+The future predicted suitability is less certain, so relatively high suitability is yellow and orange. %% 
+```
+
+```{r echo=F, message=F, warning=F}
+
+library(leafem)
+library(leaflet)
+library(leaflet.extras)
+
+pal1 <- colorNumeric(
+  palette = viridis(n=3600000,option="turbo"),
+  domain = 0:1,
+  na.color = "transparent"
+)
+
+leaflet() %>% addTiles() %>%
+  addTiles(group = "Base Map") %>%
+  addRasterImage(currAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Current Projected Distribution",
+                 layerId = "Current Probability") %>%
+  addRasterImage(futAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Future Projected Distribution",
+                 layerId = "Future Probability") %>%
+  addLegend("bottomright", pal = pal1,
+            values = values(currAgg), 
+            group="Current Projected Distribution") %>%
+  setView(lng= -80, lat=38.5, zoom = 5) %>%
+  addCircleMarkers(lng=LdSLpoints$Long, 
+                   lat=LdSLpoints$Lat, 
+                   radius=6, 
+                   weight=0.75, 
+                   color="black", 
+                   opacity=1, 
+                   fillColor="darkred", 
+                   fillOpacity=0.5, 
+                   group="Data Points") %>%
+   addLayersControl(
+     baseGroups = c("Base Map", "Current Projected Distribution", "Future Projected Distribution"),
+     overlayGroups = c("Data Points")) %>%
+    #options = layersControlOptions(collapsed = F)) %>%
+  hideGroup(c("Current Projected Distribution", "Future Projected Distribution"))
+
+## changing defaults to just data points
+## Radio toggle for current/future
+
+  
+
+##############
+  # leafem::addImageQuery(currAgg[[1]],
+  #               layerId = 'Current Probability',
+  #               type='click',
+  #               digits=0,
+  #               prefix='Raster Value') %>% 
+  # addLayersControl(overlayGroups = c("Current Projected Distribution", "Future Projected Distribution", "Data Points"),
+  #                  options = layersControlOptions(collapsed = F))
+
+
+```
+
+**You can toggle the visible layers by checking and un-checking the "Current Projected Distribution" and "Future Projected Distribution" in the top right box.** In the coming years, it is likely the distribution may shift northwards and away from the coast. Additionally, the habitat suitability will increase in inland areas it is already found. 
+
+### Top Predictors 
+
+The top predictors of current habitat suitability of the Spotted Lanternfly included:
+
+1. bio15: Precipitation Seasonality    
+2. bio 9: Mean Temperature of Driest Quarter  
+3. bio 3: Isothermality
+4. kg5: Köppen-Geiger climate classification 
+
+
+### Model information
+
+The 'current' model was created using the GBIF iNaturalist data points and a cross-validated random forest algorithm. Variables included in the model were [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) from 1981–2010 using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+The future (2041-2070) distribution layer was created using the top model of its current distribution on projected future [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) in 2041-2070 assuming the 'worst-case scenario' shared socioeconomic pathway SSP585 and using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+
+
+
+
+

@@ -1,0 +1,138 @@
+---
+title: "Tufted Apple Bud Moth"
+author: "Pest species atlas"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+ 
+![Adult](https://content.ces.ncsu.edu/media/images/5461479-PPT.jpg){width=30%} ![Signs of Damage](https://content.ces.ncsu.edu/media/images/Transparency0239.jpg){width=30%}
+
+Pictures from [NC State Extension](https://content.ces.ncsu.edu/tufted-apple-bud-moth)  
+   
+
+
+### Background 
+
+The Tufted Apple Bud Moth (TABM), or *Platynota idaeusalis*, is a native pest to North America. Adult females are about ½ inch long, with males slightly smaller. Their wings are generally grayish at the base, darkening to brown at the tips, with lighter-colored margins along the leading edge. This moth is recognized by the tufted scales on the tops of its wings, which aid in its camouflage on tree trunks.
+
+TABM larvae differ from other leafrollers with their distinct light brown to grayish tan color, chestnut-brown head capsule, a darker prothoracic shield, and a dark stripe down the back of the body. The eggs are deposited in an apple-green mass, usually on the upper leaf surface, along a leaf vein.
+
+The moth produces two generations per year and overwinters as second to fourth instars in shelters like leaves and decaying fruit beneath trees in apple, cherry, peach, and pear orchards and in woods. Larvae become active in early spring, completing their development on root suckers or broadleaf weeds. Adults emerge around May, and the first-instar larvae disperse by crawling or ballooning. From the third instar, they create shelters by rolling leaves, tying leaves to other leaves or fruit, and building shelters within fruit clusters. They usually pupate within these shelters, and the second brood begins egg-laying around August.
+
+The real concern with TABM is not their leafrolling activity, but when they web a leaf onto the apple and feed directly on the fruit. This feeding results in tiny holes, irregular scarring of the apple surface, or areas of rot generally found around the stem. This damage is most harmful to fruits destined for fresh markets, where their cash value is much higher than that of processing grade apples.
+
+A method of monitoring and managing TABM involves the use of a commercially available plastic delta-shaped sex pheromone trap. These traps should be placed in the orchard by the bloom of apples and checked regularly. The control of TABM has improved due to the introduction of codling moth control products that also effectively control TABM. The best time to apply an insecticide can be confidently predicted by monitoring orchard temperatures daily, as a close relationship exists between the number of accumulated degree days starting with the first pheromone trap capture of an adult TABM and egg hatch for both the first and second brood.
+
+For more information, visit the [PennState Extension](https://extension.psu.edu/tree-fruit-insect-pest-tufted-apple-bud-moth) website
+
+## Data collected from Global Biodiversity Information Facility (GBIF)
+
+Records were downloaded from [GBIF](https://www.gbif.org/species/1741824) and filtered to include only iNaturalist research-grade observations.   
+GBIF.org (25 May 2023) GBIF Occurrence Download  https://doi.org/10.15468/dl.t9cnkq
+
+```{r echo=F, message=F}
+library(leaflet)
+
+TABMdata <- read.csv("GBIF_Occurrence/Lanternfly_Lycorma_delicatula/occurrence_L-delicatula.csv", sep=",", header=T)
+
+TABMpoints <- TABMdata %>%
+  dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
+
+## The tif files were all moved to the Predicted Distribution Maps folder and the paths would need to be updated if re-run
+
+library(raster)
+library(viridis)
+current<- raster("TABM_Current_RF-SDM.tif")
+currAgg <- aggregate(current, fact=2)
+#res(currAgg)
+#length(values(currAgg))
+pal <- viridis(n=3600000, option = "turbo")
+
+future <- raster("TABM_Future_RF-SDM.tif")
+#plot(future)
+
+futAgg <- aggregate(future, fact=2)
+#res(futAgg)
+#length(values(futAgg))
+```
+
+## Predicted Current and Future Habitat Suitability (0-1) of Tufted Apple Bud Moth using research-grade iNaturalist observations
+
+The raster layers of this map are the predicted current and future habitat suitability of Tufted Apple Bud Moths, with low predicted suitability in blue, increasing suitability in green and then yellow, and highest suitability in orange and red. 
+
+```{include = F}
+The future predicted suitability is less certain, so relatively high suitability is yellow and orange. %% 
+```
+
+```{r echo=F, message=F, warning=F}
+
+library(leafem)
+library(leaflet)
+library(leaflet.extras)
+
+pal1 <- colorNumeric(
+  palette = viridis(n=3600000,option="turbo"),
+  domain = 0:1,
+  na.color = "transparent"
+)
+
+leaflet() %>% addTiles() %>%
+  addTiles(group = "Base Map") %>%
+  addRasterImage(currAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Current Projected Distribution",
+                 layerId = "Current Probability") %>%
+  addRasterImage(futAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Future Projected Distribution",
+                 layerId = "Future Probability") %>%
+  addLegend("bottomright", pal = pal1,
+            values = values(currAgg), 
+            group="Current Projected Distribution") %>%
+  setView(lng= -80, lat=38.5, zoom = 5) %>%
+  addCircleMarkers(lng=TABMpoints$Long, 
+                   lat=TABMpoints$Lat, 
+                   radius=6, 
+                   weight=0.75, 
+                   color="black", 
+                   opacity=1, 
+                   fillColor="darkred", 
+                   fillOpacity=0.5, 
+                   group="Data Points") %>%
+   addLayersControl(
+     baseGroups = c("Base Map", "Current Projected Distribution", "Future Projected Distribution"),
+     overlayGroups = c("Data Points")) %>%
+    #options = layersControlOptions(collapsed = F)) %>%
+  hideGroup(c("Current Projected Distribution", "Future Projected Distribution"))
+
+```
+
+**You can toggle the visible layers by checking and un-checking the "Current Projected Distribution" and "Future Projected Distribution" in the top right box.** In the coming years, it is likely the distribution may shift northwards and away from the coast. Additionally, the habitat suitability will increase in inland areas it is already found. 
+
+### Top Predictors 
+
+The top predictors of current habitat suitability of the Tufted Apple Bud Moth included:
+
+1. gdd10: Growing degree days heat sum above 10°C
+2. bio 18: Monthly Precipitation of the Warmest Quarter  
+3. bio 13: Precipitation of the Wettest Month  
+4. bio 15: Precipitation Seasonality    
+5. bio 16: Monthly Precipitation of Wettest Quarter  
+6. bio 19: Monthly Precipitation of Coldest Quarter  
+7. bio 4: Temperature Seasonality 
+
+More information about the predictors used can be found [here](https://chelsa-climate.org/bioclim/).  
+
+### Model information
+
+The 'current' model was created using the GBIF iNaturalist data points and a cross-validated random forest algorithm. Variables included in the model were [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) from 1981–2010 using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+The future (2041-2070) distribution layer was created using the top model of its current distribution on projected future [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) in 2041-2070 assuming the 'worst-case scenario' shared socioeconomic pathway SSP585 and using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).

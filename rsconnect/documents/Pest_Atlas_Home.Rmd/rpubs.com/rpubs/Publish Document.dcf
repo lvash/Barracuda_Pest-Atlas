@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/1041617/7be51b5c769645579f86057d5be3c9f3
+bundleId: https://api.rpubs.com/api/v1/document/1041617/7be51b5c769645579f86057d5be3c9f3
+url: http://rpubs.com/lvash/1041617
+when: 1685467227.99136
+lastSyncTime: 1685467227.99137

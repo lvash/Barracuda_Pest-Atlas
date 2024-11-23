@@ -1,0 +1,152 @@
+---
+title: "Cabbage White Butterfly (*Pieris rapae*)"
+author: "Pest Species Atlas"
+date: "last updated `r Sys.Date()`"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+ 
+![Cabbage White Adult](https://bugguide.net/images/cache/HZ9/LYL/HZ9LYLWLKZYZ4RHH4RDZSRHH5RZH8ROL5R1L0ZDL6RSH0Z2LXRFZSRJZPRYZKR3ZYL9LHZ9LRZPLSRWLMZ0HGRBLGRKH.jpg){width=30%}
+![Cabbage White Life Stages](https://extension.umaine.edu/home-and-garden-ipm/wp-content/uploads/sites/43/2010/10/ImportedCabbageworm.jpg){width=30%}
+![Cabbage White symptoms](https://gardenplannerwebsites.azureedge.net/blog/small-cabbage-white-caterpillar-damage-2x.jpg){width=30%} 
+
+\n
+
+Pictures from [BugGuide.net](https://bugguide.net/node/view/3259), [UMaine Extension](https://extension.umaine.edu/home-and-garden-ipm/fact-sheets/common-name-listing/imported-cabbageworm/), and [GrowVeg](https://www.growveg.com/guides/cabbage-white-butterflies-how-to-avoid-a-brassica-massacre/)
+
+
+### Background 
+
+The cabbage white butterfly (*Pieris rapae*) occurs in temperate regions around the world, and was first observed in North America in 1860 in Quebec City, Canada^[1](https://entnemdept.ufl.edu/creatures/veg/leaf/imported_cabbageworm.htm)^. It dispersed rapidly, and by 1886 was found in the Gulf Coast and Rocky Mountain states. It is now widespread in North America.
+
+The complete life cycle of this insect requires three to six weeks, depending on weather. The number of generations reported annually is two to three in Canada, three in the New England states, three to five in California, and six to eight in the south. They can be found throughout the year in Florida.
+
+
+### Damage 
+
+Larvae prefer to feed on cabbage, cauliflower, broccoli, Brussels sprouts, turnips, radishes, kale, lettuce and weeds of the mustard family ^[2](https://extension.umaine.edu/ipm/ipddl/publications/5006e/)^. In fact, this pest is one of the most damaging and destructive enemies of these plants - if left untreated, they will often reduce mature plants to stems and large veins. 
+
+### Signs of infection 
+
+The yellowish, elongated eggs, are laid singly on the underside of leaves. The caterpillars chew irregular holes in the leaves and usually eat their way into cabbage heads from the bottom. In addition to the feeding damage, the insects’ frass will stain cauliflower.
+
+### Management strategies  
+
+Controlling weeds around the garden, especially plants of the mustard family, should help decrease the numbers of this pest ^[2](https://extension.umaine.edu/ipm/ipddl/publications/5006e/)^. Destroying and removing the remains of plants in the fall, as well as fall tillage, reduces the number of over-wintering pupae. Hand-picking the larvae may be labor intensive but can significantly cut the numbers and keep damage down. Early Globe, Red Acre, and Round Dutch cabbage have shown some resistance to cabbage white caterpillars.
+
+B.t. (*Bacillus thuringiensis*), an organic insecticide derived from a bacterium and sold as Dipel®, Bactur®, Sok-Bt® or Thuricide®, is a management method.  B.t. is less effective under cooler conditions.  Other options include spinosad, insecticidal soap, Sevin® (carbaryl) and malathion.  The smaller the caterpillars are, the easier they are to kill.  Insecticides should be applied in late afternoon or early evening to minimize bee exposure.
+
+For more information, visit the [UMaine Extension](https://extension.umaine.edu/) website or view their [Pieris rapae Fact Sheet](https://extension.umaine.edu/ipm/ipddl/publications/5006e/)
+
+## Data collected from Global Biodiversity Information Facility (GBIF)
+
+Records were downloaded from [GBIF](https://www.gbif.org/species/1920496) and filtered to include only iNaturalist research-grade observations.
+
+```{r echo=F, message=F}
+library(leaflet)
+
+PrCWdata <- read.csv("GBIF_Occurrence/Cabbage_white_Pieris_rapae/occurrence_P_rapae.csv", header=T)
+
+PrCWpoints <- PrCWdata %>%
+  dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
+
+
+## The tif files were all moved to the Predicted Distribution Maps folder and the paths would need to be updated if re-run
+
+library(raster)
+library(viridis)
+current<- raster("PrCW_Current_RF-SDM.tif")
+currAgg <- aggregate(current, fact=2)
+#res(currAgg)
+#length(values(currAgg))
+
+future <- raster("PrCW_Future_RF-SDM.tif")
+#plot(future)
+
+futAgg <- aggregate(future, fact=2)
+#res(futAgg)
+#length(values(futAgg))
+```
+
+## Predicted Current and Future Habitat Suitability (0-1) of Cabbage White using research-grade iNaturalist observations
+
+The raster layers of this map are the predicted current and future habitat suitability of codling moths, with low predicted probabilities in blue, increasing probabilities in green, and highest probabilities in yellow.
+
+
+
+```{r echo=F, message=F, warning=F}
+
+library(leafem)
+library(leaflet)
+library(leaflet.extras)
+
+pal1 <- colorNumeric(
+  palette = "viridis",
+  domain = 0:1,
+  na.color = "transparent"
+)
+
+
+leaflet() %>% addTiles() %>%
+  addRasterImage(currAgg, 
+                 colors=pal1, 
+                 project=T,
+                 opacity = 0.75, 
+                 group="Current Projected Distribution",
+                 layerId = "Current Probability") %>%
+  addRasterImage(futAgg, 
+                 colors=pal1, 
+                 project=T,
+                 opacity = 0.75, 
+                 group="Future Projected Distribution",
+                 layerId = "Future Probability") %>%
+  addLegend("bottomright", pal = pal1,
+            values = values(currAgg), 
+            group="Current Projected Distribution") %>%
+  setView(lng= -80, lat=38.5, zoom = 5) %>%
+  #addLegend("bottomright", pal = pal1,
+            #values = values(futAgg), 
+            #group="Future Projected Distribution") %>%
+  addCircleMarkers(lng=PrCWpoints$Long, 
+                   lat=PrCWpoints$Lat, 
+                   radius=6, 
+                   weight=0.75, 
+                   color="black", 
+                   opacity=1, 
+                   fillColor="darkred", 
+                   fillOpacity=0.5, 
+                   group="Data Points") %>%
+   addLayersControl(
+     baseGroups = c("Current Projected Distribution", "Future Projected Distribution"),
+     overlayGroups = c("Data Points")) %>%
+    #options = layersControlOptions(collapsed = F)) %>%
+  hideGroup(c("Current Projected Distribution", "Future Projected Distribution"))
+
+```
+
+**You can toggle the visible layers by checking and un-checking the "Current Projected Distribution" and "Future Projected Distribution" in the top right box.** 
+
+In the coming years, it is likely the distribution may shift northwards, but overall suitability may decrease
+
+### Top Predictors 
+
+The top predictors of current habitat suitability of the cabbage white included:
+
+1. bio13: Precipitation of Wettest Month    
+2. bio 18: Precipitation of Warmest Quarter    
+3. bio4: Temperature Seasonality   
+4. gsp: growing season precipitation  
+
+### Model information
+
+The 'current' model was created using the GBIF iNaturalist data points and a cross-validated random forest algorithm. Variables included in the model were [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) from 1981–2010 using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+The future (2041-2070) distribution layer was created using the top model of its current distribution on projected future [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) in 2041-2070 assuming the 'worst-case scenario' shared socioeconomic pathway SSP585 and using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)). 

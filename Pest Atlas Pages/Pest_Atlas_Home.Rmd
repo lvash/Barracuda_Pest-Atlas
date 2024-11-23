@@ -1,0 +1,32 @@
+---
+title: "Pest Species Atlas"
+author: "Barracuda"
+date: "last updated `r Sys.Date()`"
+output: rmdformats::readthedown
+---
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+
+## [Codling Moth (*Cydia pomonella*)](https://rpubs.com/lvash/C_pomonella)
+ 
+![Codling Moth Larva [source](https://extension.usu.edu/pests/ipm/notes_ag/fruit-codling-moth)](https://extension.usu.edu/pests/ipm/images/agricultural/fruit/cm-larva.jpg){width=40%}
+
+## [Spotted Wing Drosophila (*D. suzukii*)](https://rpubs.com/lvash/SWD_suzukii)
+
+![Spotted Wing Drosophila Adult Female with ovipostor (circled and inset) [source](https://extension.umaine.edu/blueberries/wp-content/uploads/sites/41/2013/02/210-b.jpg)](https://extension.umaine.edu/blueberries/wp-content/uploads/sites/41/2013/02/210-b.jpg){width=40%}
+
+## [Cabbage White (*Pieris rapae*)](https://rpubs.com/lvash/P_rapae)
+
+![Cabbage White Life Stages [source](https://extension.umaine.edu/home-and-garden-ipm/wp-content/uploads/sites/43/2010/10/ImportedCabbageworm.jpg)](https://extension.umaine.edu/home-and-garden-ipm/wp-content/uploads/sites/43/2010/10/ImportedCabbageworm.jpg){width=40%}
+
+
+## Additional species  
+
+[Tufted Apple Bud Moth](https://rpubs.com/lvash/TABM)  
+[Spotted Lanternfly](https://rpubs.com/lvash/L_delicatula)  
+[Brown marmorated stinkbug](https://rpubs.com/lvash/H_halys)  
+

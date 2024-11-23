@@ -1,0 +1,138 @@
+---
+title: "Template"
+author: "Pest species atlas"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+ 
+![Picture](){width=30%}
+
+
+
+Pictures from []()  
+   
+
+
+### Background 
+
+The codling moth (*Cydia pomonella*) is a member of the Lepidopteran family Tortricidae. This moth has a widespread distribution, being found on six continents. Adaptive behavior such as diapause and multiple generations per breeding season have allowed this moth to persist even during years of bad climatic conditions.
+
+
+They are major pests to agricultural crops, mainly fruits such as apples and pears. Because the larvae are not able to feed on leaves, they are highly dependent on fruits as a food source and thus have a significant impact on crops. The caterpillars bore into fruit and stop it from growing, which leads to premature ripening. 
+
+For more information, visit the []() website or view their [Fact Sheet]()
+
+## Data collected from Global Biodiversity Information Facility (GBIF)
+
+Records were downloaded from [GBIF]() and filtered to include only iNaturalist research-grade observations.
+GBIF data citation: 
+
+```{r echo=F, message=F}
+library(leaflet)
+CpCMdata <- read.csv("GBIF_Occurrence/Codling_moth_Cydia_pomonella/occurrence_C_pomonella.csv", header=T)
+
+CpCMpoints <- CpCMdata %>%
+  dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
+
+## The tif files were all moved to the Predicted Distribution Maps folder and the paths would need to be updated if re-run
+
+library(raster)
+library(viridis)
+current<- raster("CpCM_Current_RF-SDM.tif")
+currAgg <- aggregate(current, fact=2)
+#res(currAgg)
+#length(values(currAgg))
+pal <- viridis(n=3600000, option = "turbo")
+
+future <- raster("CpCM_Future_RF-SDM.tif")
+#plot(future)
+
+futAgg <- aggregate(future, fact=2)
+#res(futAgg)
+#length(values(futAgg))
+```
+
+## Predicted Current and Future Habitat Suitability (0-1) of Codling Moth using research-grade iNaturalist observations
+
+The raster layers of this map are the predicted current and future habitat suitability of the pest, with low predicted suitability in blue, increasing suitability in green and then yellow, and highest suitability in orange and red. The future predicted suitability is less certain, so relatively high suitability is yellow and orange. 
+
+
+
+```{r echo=F, message=F, warning=F}
+
+library(leafem)
+library(leaflet)
+library(leaflet.extras)
+
+pal1 <- colorNumeric(
+  palette = viridis(n=3600000,option="turbo"),
+  domain = 0:1,
+  na.color = "transparent"
+)
+
+leaflet() %>% addTiles() %>%
+  addTiles(group = "Base Map") %>%
+  addRasterImage(currAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Current Projected Distribution",
+                 layerId = "Current Probability") %>%
+  addRasterImage(futAgg, 
+                 colors=pal1, 
+                 opacity = 0.75, 
+                 group="Future Projected Distribution",
+                 layerId = "Future Probability") %>%
+  addLegend("bottomright", pal = pal1,
+            values = values(currAgg), 
+            group="Current Projected Distribution") %>%
+  setView(lng= -80, lat=38.5, zoom = 5) %>%
+  addCircleMarkers(lng=CpCMpoints$Long, 
+                   lat=CpCMpoints$Lat, 
+                   radius=6, 
+                   weight=0.75, 
+                   color="black", 
+                   opacity=1, 
+                   fillColor="darkred", 
+                   fillOpacity=0.5, 
+                   group="Data Points") %>%
+   addLayersControl(
+     baseGroups = c("Base Map", "Current Projected Distribution", "Future Projected Distribution"),
+     overlayGroups = c("Data Points")) %>%
+    #options = layersControlOptions(collapsed = F)) %>%
+  hideGroup(c("Current Projected Distribution", "Future Projected Distribution"))
+
+## changing defaults to just data points
+## Radio toggle for current/future
+
+
+```
+
+**You can toggle the visible layers by checking and un-checking the "Current Projected Distribution" and "Future Projected Distribution" in the top right box.** In the coming years, it is likely the distribution may shift northwards and away from the coast. Additionally, the habitat suitability will increase in inland areas it is already found. 
+
+### Top Predictors 
+
+The top predictors of current habitat suitability of the codling moth included:
+
+1. bio15: Precipitation Seasonality    
+2. bio14: Precipitation of Driest Month    
+3. bio 18: Precipitation of Warmest Quarter    
+4. gdd10: number of growing degree days over 10C  
+5. gsp: growing season precipitation  
+
+### Model information
+
+The 'current' model was created using the GBIF iNaturalist data points and a cross-validated random forest algorithm. Variables included in the model were [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) from 1981–2010 using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+The future (2041-2070) distribution layer was created using the top model of its current distribution on projected future [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) in 2041-2070 assuming the 'worst-case scenario' shared socioeconomic pathway SSP585 and using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+
+
+
+
+

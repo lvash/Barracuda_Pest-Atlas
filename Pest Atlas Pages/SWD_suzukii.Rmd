@@ -1,0 +1,151 @@
+---
+title: "Spotted Wing *Drosophila* (*D. suzukii*)"
+author: "Pest Species Atlas"
+date: "last updated  `r Sys.Date()`"
+output: html_document
+---
+
+
+<style type="text/css">
+  body{
+  font-size: 14pt;
+}
+</style>
+ 
+![Spotted Wing Drosophila Adult Female with ovipostor (circled and inset)](https://extension.umaine.edu/blueberries/wp-content/uploads/sites/41/2013/02/210-b.jpg){width=30%}
+![Spotted Wing Drosophila larvae (A-B) and pupae (C)](https://extension.umaine.edu/blueberries/wp-content/uploads/sites/41/2013/02/210-d.jpg){width=30%}
+![Spotted Wing Drosophila oviposition holes](https://extension.umaine.edu/blueberries/wp-content/uploads/sites/41/2013/02/210-c.jpg){width=30%} 
+
+\n
+
+Pictures from [UMaine Extension](https://extension.umaine.edu/blueberries/factsheets/insects/210-spotted-wing-drosophila/)
+
+
+### Background 
+
+The rapid reproductive rate of Spotted Wing Drosophila (*Drosophila suzukii*, SWD), combined with its ability to infest a wide range of fruit crops, makes it a significant pest for fruit growers. SWD is a small fruit fly that is native to Southeast Asia. It was first detected in Hawaii in 1980 and was accidentally introduced to California in 2008. Since then, it has spread rapidly to other states and provinces, including Florida, Louisiana, South and North Carolina, New York, New England, and the Canadian Maritimes and Quebec^[1](https://extension.umaine.edu/blueberries/factsheets/insects/210-spotted-wing-drosophila/)^. The pest is known to infest a wide range of fruit crops, including cherries, blueberries, raspberries, strawberries, grapes, and peaches. Unlike other fruit flies, the female SWD has a serrated ovipositor that allows it to lay eggs inside intact fruit, making it difficult to detect and control. 
+
+### Life cycle
+
+The SWD life cycle typically lasts around two to three weeks, depending on temperature and other environmental factors. The female lays eggs inside intact fruit, the larvae hatch and feed on the fruit flesh, and after about one week, the larvae pupate and emerge as adult flies. The adults are sexually mature within a few days and can mate and lay eggs throughout their lifespan, which averages around 30 days. It's also important to note that the SWD can overwinter in the adult stage, which allows it to establish in new areas and emerge early in the growing season when fruits start to ripen. 
+
+
+### Damage 
+
+SWD is a significant pest of soft-skinned fruit crops. Unlike many other fruit flies, *D. suzukii* is able to lay its eggs in fresh, ripening fruits rather than overripe or decaying ones, thanks to its serrated ovipositor. This leads to serious agricultural damage as the larvae feed inside the fruit, causing it to collapse and become unmarketable. This pest targets a wide variety of crops, including but not limited to cherries, blueberries, raspberries, blackberries, strawberries, peaches, and grapes.
+
+### Signs of infection
+
+Signs of *D. suzukii* infestation are often not apparent until harvest, or even post-harvest, which makes management more challenging. Infected fruits may appear normal on the outside, but closer inspection or a gentle squeeze can reveal a soft spot or small indents where the female has inserted her eggs. These spots are often surrounded by a light discolored ring. As the larvae continue to feed, the fruit becomes increasingly soft, eventually collapsing and developing a wrinkled appearance. In advanced stages of infestation, you may see small, white larvae inside the fruit or exiting through small holes. The fruit might also leak juice or display signs of secondary infections, such as mold. Infested fruit may also have a fermented or vinegar-like odor. 
+
+
+### Management strategies  
+
+*Drosophila suzukii* is an invasive fruit fly species that poses a significant threat to soft-skinned fruit crops. Management strategies typically involve an integrated pest management (IPM) approach, combining various methods to keep the pest population under control. These include monitoring through the use of traps baited with yeast-sugar-water solutions to identify the presence and population levels of the fly. Another strategy is the use of cultural controls, such as pruning and sanitation, to remove potential breeding sites and overwintering locations. Chemical control can also be employed, utilizing approved insecticides when the population exceeds a certain threshold. Additionally, biological control, including the use of natural enemies like parasitoids, has been under research. Lastly, post-harvest strategies such as refrigeration can help to halt any remaining larvae development in the fruit. It's important to note that strategies can vary depending on the specific conditions of the location and crop, and local extension services should be consulted for the most current and applicable recommendations.
+
+For more information, visit the [UMaine Extension](https://extension.umaine.edu/) website or view their [SWD Fact Sheet #210](https://extension.umaine.edu/blueberries/factsheets/insects/210-spotted-wing-drosophila/)
+
+## Data collected from Global Biodiversity Information Facility (GBIF)
+
+Records were downloaded from [GBIF](https://www.gbif.org/species/5073820) and filtered to include only iNaturalist research-grade observations.
+
+```{r echo=F, message=F}
+library(leaflet)
+
+SWDdata <- read.csv("GBIF_Occurrence/SWD_Drosophila_suzukii/occurrence_D_suzukii.csv", header=T)
+
+SWDpoints <- SWDdata %>%
+  dplyr::select(Long=decimalLongitude, Lat=decimalLatitude)
+
+## The tif files were all moved to the Predicted Distribution Maps folder and the paths would need to be updated if re-run
+
+library(raster)
+library(viridis)
+current<- raster("SWD_Current_RF-SDM.tif")
+currAgg <- aggregate(current, fact=2)
+#res(currAgg)
+#length(values(currAgg))
+
+future <- raster("SWD_Future_RF-SDM.tif")
+#plot(future)
+
+futAgg <- aggregate(future, fact=2)
+#res(futAgg)
+#length(values(futAgg))
+```
+
+## Predicted Current and Future Habitat Suitability (0-1) of Spotted Wing Drosophila using research-grade iNaturalist observations
+
+The raster layers of this map are the predicted current and future habitat suitability of SWD, with low predicted suitability in blue, increasing suitability in green and then yellow, and highest suitability in orange and red. The future predicted suitability is less certain, so relatively high suitability is yellow and orange. 
+
+
+
+```{r echo=F, message=F, warning=F}
+
+library(leafem)
+library(leaflet)
+library(leaflet.extras)
+
+pal1 <- colorNumeric(
+  palette = viridis(n=3600000,option="turbo"),
+  domain = 0:1,
+  na.color = "transparent"
+)
+
+
+leaflet() %>% addTiles() %>%
+  addTiles(group = "Base Map") %>%
+  addRasterImage(currAgg, 
+                 colors=pal1, 
+                 project=T,
+                 opacity = 0.75, 
+                 group="Current Projected Distribution",
+                 layerId = "Current Probability") %>%
+  addRasterImage(futAgg, 
+                 colors=pal1, 
+                 project=T,
+                 opacity = 0.75, 
+                 group="Future Projected Distribution",
+                 layerId = "Future Probability") %>%
+  addLegend("bottomright", pal = pal1,
+            values = values(currAgg), 
+            group="Current Projected Distribution") %>%
+  setView(lng= -80, lat=38.5, zoom = 5) %>%
+  #addLegend("bottomright", pal = pal1,
+            #values = values(futAgg), 
+            #group="Future Projected Distribution") %>%
+  addCircleMarkers(lng=SWDpoints$Long, 
+                   lat=SWDpoints$Lat, 
+                   radius=6, 
+                   weight=0.75, 
+                   color="black", 
+                   opacity=1, 
+                   fillColor="darkred", 
+                   fillOpacity=0.5, 
+                   group="Data Points") %>%
+   addLayersControl(
+     baseGroups = c("Base Map", "Current Projected Distribution", "Future Projected Distribution"),
+     overlayGroups = c("Data Points")) %>%
+    #options = layersControlOptions(collapsed = F)) %>%
+  hideGroup(c("Current Projected Distribution", "Future Projected Distribution"))
+
+```
+
+**You can toggle the visible layers by checking and un-checking the "Current Projected Distribution" and "Future Projected Distribution" in the top right box.** 
+
+In the coming years, it is likely the distribution may shift northwards, but overall suitability may decrease
+
+### Top Predictors 
+
+The top predictors of current habitat suitability of the Spotted Wing Drosophila included:
+
+1. bio 18: Precipitation of Warmest Quarter    
+2. bio15: Precipitation Seasonality      
+3. bio13: Precipitation of Wettest Month  
+4. npp: potential net primary productivity  
+
+### Model information
+
+The 'current' model was created using the GBIF iNaturalist data points and a cross-validated random forest algorithm. Variables included in the model were [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) from 1981–2010 using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)).
+
+The future (2041-2070) distribution layer was created using the top model of its current distribution on projected future [CHELSA + variables](https://chelsa-climate.org/exchelsa-extended-bioclim/) in 2041-2070 assuming the 'worst-case scenario' shared socioeconomic pathway SSP585 and using the NOAA Earth system model (more information [here](https://www.envidat.ch/dataset/21d662b7-9c59-41da-aa82-7d8a879b8db7/resource/aa676d1f-5f7f-479b-af20-26066b0537d1/download/chelsa_file_specification_bioclim_plus.pdf)). 
