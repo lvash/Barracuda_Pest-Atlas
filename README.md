@@ -1,6 +1,12 @@
 # Barracuda Pest Atlas
 
-We predicted the range shift of 5 agricultural pest species: Codling Moth (*Cydia pomonella*); Brown marmorated stinkbug (*Halyomorpha halys*); Spotted lantern fly (*Lycorma delicatula*); Cabbage White Butterfly (*Pieris rapae*); Tufted Apple Bud Moth (*Platynota idaeusalis*); and Spotted wing *Drosophila* (*D. suzukii*). 
+We predicted the range shift of 5 agricultural pest species: 
+* Codling Moth (*Cydia pomonella*)  
+* Brown marmorated stinkbug (*Halyomorpha halys*)  
+* Spotted lantern fly (*Lycorma delicatula*)  
+* Cabbage White Butterfly (*Pieris rapae*)  
+* Tufted Apple Bud Moth (*Platynota idaeusalis*)  
+* Spotted wing *Drosophila* (*D. suzukii*)  
 
 Files and folders within this repository:
 
