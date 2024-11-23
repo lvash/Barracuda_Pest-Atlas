@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="6dc35c87-ff97-4708-9e45-6f764ddc1ef3"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+      <alternateIdentifier>10.15468/phlkto</alternateIdentifier>
+        <alternateIdentifier>6dc35c87-ff97-4708-9e45-6f764ddc1ef3</alternateIdentifier>
+        <alternateIdentifier>https://bison.usgs.gov/ipt/resource?r=pollardbase</alternateIdentifier>
+    <title>PollardBase</title>
+    <creator>
+    <individualName>
+<givenName>Leslie</givenName>          <surName>Ries</surName>
+    </individualName>
+<organizationName>Georgetown University</organizationName><positionName>Principle Investigator, PollardBase</positionName>    <address>
+<city>Washington</city><administrativeArea>District of Columbia</administrativeArea><country>UNITED_STATES</country>    </address>
+<phone>+1 202-687-5678 (office)</phone><electronicMailAddress>Leslie.Ries@georgetown.edu</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+<givenName>Elizabeth</givenName>          <surName>Sellers</surName>
+    </individualName>
+<organizationName>United States Geological Survey</organizationName><positionName>Data Development Specialist</positionName>    <address>
+<deliveryPoint>12201 Sunrise Valley Drive, Mail Stop 302</deliveryPoint><city>Reston</city><administrativeArea>Virginia</administrativeArea><postalCode>20192</postalCode><country>UNITED_STATES</country>    </address>
+<phone>+1 (703) 648.4385</phone><electronicMailAddress>esellers@usgs.gov</electronicMailAddress>    </metadataProvider>
+      <pubDate>
+      2018-06-04
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>PollardBase is a data entry and management system for butterfly monitoring programs that follow protocols similar to those described by Ernie Pollard and have become known in the butterfly world as “Pollard Walks”. All these programs use trained volunteers who walk set routes multiple times during each season and over several years. Butterfly monitoring data published by PollardBase collaborators includes the following collaborator’s datasets:  
+
+    PollardBase - Cascades Butterfly Project;   
+    PollardBase - Colorado Butterfly Monitoring Network;   
+    PollardBase - Illinois Butterfly Monitoring Network;   
+    PollardBase - Iowa Butterfly Survey Network;   
+    PollardBase - Michigan Butterfly network;   
+    PollardBase - Missouri Botanical Garden;   
+    PollardBase - Orange County Butterfly Monitoring Network;   
+    PollardBase - Tennessee Butterfly Monitoring Network.</para>
+    </abstract>
+        <keywordSet>
+              <keyword>Metadata</keyword>
+              <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>butterflies</keyword>
+              <keyword>moths</keyword>
+              <keywordThesaurus>USGS CSAS&amp;L Biocomplexity Thesaurus https://www2.usgs.gov/core_science_systems/csas/biocomplexity_thesaurus/</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+              <keyword>Observation</keyword>
+              <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+      <intellectualRights>
+        <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+      </intellectualRights>
+      <coverage>
+            <geographicCoverage>
+                  <geographicDescription>United States of America</geographicDescription>
+                  <boundingCoordinates>
+                      <westBoundingCoordinate>-168.75</westBoundingCoordinate>
+                      <eastBoundingCoordinate>-71.719</eastBoundingCoordinate>
+                      <northBoundingCoordinate>71.856</northBoundingCoordinate>
+                      <southBoundingCoordinate>23.564</southBoundingCoordinate>
+                  </boundingCoordinates>
+            </geographicCoverage>
+              <taxonomicCoverage>
+                    <generalTaxonomicCoverage>Butterflies and moths.</generalTaxonomicCoverage>
+                    <taxonomicClassification>
+                          <taxonRankName>Order</taxonRankName>
+                        <taxonRankValue>Lepidoptera</taxonRankValue>
+                          <commonName>butterflies, moths, papillons, papillons de nuit, Borboleta, Mariposa</commonName>
+                    </taxonomicClassification>
+              </taxonomicCoverage>
+      </coverage>
+      <maintenance>
+          <description>
+              <para></para>
+          </description>
+          <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+      </maintenance>
+      <contact>
+    <individualName>
+<givenName>Leslie</givenName>          <surName>Ries</surName>
+    </individualName>
+<organizationName>Georgetown University</organizationName><positionName>Principle Investigator, PollardBase</positionName>    <address>
+<city>Washington</city><administrativeArea>District of Columbia</administrativeArea><country>UNITED_STATES</country>    </address>
+<phone>+1 202-687-5678 (office)</phone><electronicMailAddress>Leslie.Ries@georgetown.edu</electronicMailAddress>      </contact>
+
+      <project >
+          <title>PollardBase</title>
+          <personnel>
+    <individualName>
+<givenName>Leslie</givenName>          <surName>Ries</surName>
+    </individualName>
+    <role>PRINCIPAL_INVESTIGATOR</role>
+          </personnel>
+          <abstract>
+              <para></para>
+          </abstract>
+          <funding>
+              <para>PollardBase is supported in part by an award from the US National Science Foundation (Grant # DBI- 1147049) to the University of Maryland. PollardBase is currently supported by Georgetown University.</para>
+          </funding>
+      </project>
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2022-10-19T18:21:03Z</dateStamp>
+      <citation>Ries L, Sellers E (2018). PollardBase. Version 1.2. United States Geological Survey. Occurrence dataset https://doi.org/10.15468/phlkto accessed via GBIF.org on 2022-10-19.</citation>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>

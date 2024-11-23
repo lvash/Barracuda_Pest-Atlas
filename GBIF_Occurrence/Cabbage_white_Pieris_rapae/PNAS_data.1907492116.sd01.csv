@@ -1,0 +1,806 @@
+Specimen_ID,Latitude,Longitude,Country,Species,Sex,ddRADseq data,mtDNA data,mtHaplotype,Population_assignment,Subpopulation_assignment,Date_collected
+Pr_1948,35.86,4.75,Algeria,Pieris rapae,M,Yes,Yes,Pra35,1,NA,2013
+Pr_1946,35.19,1.13,Algeria,Pieris rapae,F,Yes,Yes,Pra2,1,NA,28-May-09
+Pr_2030,35.22,4.19,Algeria,Pieris rapae,F,Yes,Yes,Pra68,1,1.1,2-Dec-11
+Pr_2017,36.33,5.36,Algeria,Pieris rapae,M,Yes,Yes,Pra1,1,1.1,11-May-12
+Pr_2018,35.33,4.3,Algeria,Pieris rapae,F,Yes,Yes,Pra25,1,1.1,11-May-12
+Pr_2016,36.26,5.25,Algeria,Pieris rapae,F,Yes,Yes,Pra35,1,1.1,12-May-12
+Pr_2015,36.59,4.61,Algeria,Pieris rapae,M,Yes,Yes,Pra2,1,1.1,18-May-12
+Pr_1915,36.45,4.11,Algeria,Pieris rapae,M,Yes,Yes,Pra25,1,1.1,27-May-12
+Pr_1916,36.63,4.6,Algeria,Pieris rapae,M,Yes,Yes,Pra2,1,1.1,16-Jun-12
+Pr_1925,33.1,6.09,Algeria,Pieris rapae,M,Yes,Yes,Pra35,1,1.1,7-Mar-13
+Pr_1947,35.75,4.55,Algeria,Pieris rapae,F,Yes,Yes,Pra25,1,1.1,10-Mar-13
+Pr_2006,36.91,7.76,Algeria,Pieris rapae,M,Yes,Yes,Pra2,1,NA,4-Apr-15
+Pr_915,-31.99,115.9,Australia,Pieris rapae,M,Yes,Yes,Pra2,3,NA,4-Oct-14
+Pr_914,-31.99,115.9,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,NA,7-Nov-14
+Pr_911,-31.99,115.9,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,NA,8-Nov-14
+Pr_913,-31.99,115.9,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,NA,8-Nov-14
+Pr_910,-31.99,115.9,Australia,Pieris rapae,M,No,Yes,Pra1,NA,NA,8-Nov-14
+Pr_912,-31.99,115.9,Australia,Pieris rapae,M,Yes,Yes,Pra1,NA,NA,8-Nov-14
+Pr_916,-31.98,115.92,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,NA,15-Nov-14
+Pr_1121,-34.75,149.72,Australia,Pieris rapae,M,Yes,Yes,Pra51,3,3.1,7-Jan-15
+Pr_1115,-34.75,149.72,Australia,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,7-Jan-15
+Pr_1119,-34.75,149.72,Australia,Pieris rapae,F,No,Yes,Pra14,NA,NA,7-Jan-15
+Pr_1078,-37.89,145.34,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.3,11-Jan-15
+Pr_1086,-37.96,145.23,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,18-Jan-15
+Pr_1093,-38.05,145.1,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.3,18-Jan-15
+Pr_1098,-37.9,145.28,Australia,Pieris rapae,F,Yes,Yes,Pra14,NA,NA,20-Jan-15
+Pr_1308,-37.86,145.07,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,29-Jan-15
+Pr_1326,-37.86,144.98,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,30-Jan-15
+Pr_1211,-34.74,150.82,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,1-Feb-15
+Pr_1327,-37.84,145.03,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.3,2-Feb-15
+Pr_1333,-37.88,145.14,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,4-Feb-15
+Pr_1109,-34.75,149.72,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,7-Feb-15
+Pr_1120,-34.75,149.72,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.1,7-Feb-15
+Pr_1289,-37.85,145.21,Australia,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,7-Feb-15
+Pr_1282,-37.87,145.12,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,10-Feb-15
+Pr_1214,-33.62,150.31,Australia,Pieris rapae,M,Yes,Yes,Pra14,NA,NA,1-Mar-15
+Pr_1213,-34.74,150.82,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,12-Mar-15
+Pr_1323,-37.72,145.05,Australia,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,16-Mar-15
+Pr_1215,-34.78,150.73,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.1,28-Mar-15
+Pr_1216,-34.78,150.73,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.1,28-Mar-15
+Pr_1217,-34.78,150.73,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,28-Mar-15
+Pr_1157,-33.8,151.11,Australia,Pieris rapae,F,Yes,No,NA,NA,NA,6-May-15
+Pr_1158,-33.8,151.11,Australia,Pieris rapae,F,Yes,No,NA,NA,NA,6-May-15
+Pr_1160,-33.8,151.11,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,6-May-15
+Pr_1161,-33.8,151.11,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,6-May-15
+Pr_1162,-33.8,151.11,Australia,Pieris rapae,F,No,Yes,Pra14,NA,NA,6-May-15
+Pr_1156,-26.43,152.76,Australia,Pieris rapae,F,Yes,Yes,Pra2,3,3.2,12-May-15
+Pr_1845,-35.26,149.06,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.1,12-Dec-15
+Pr_1848,-35.26,149.06,Australia,Pieris rapae,F,Yes,Yes,Pra14,3,3.1,14-Dec-15
+Pr_1849,-35.26,149.06,Australia,Pieris rapae,M,Yes,Yes,Pra2,3,3.1,16-Dec-15
+Pr_1850,-35.26,149.06,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.1,16-Dec-15
+Pr_2192,-41.2,146.36,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,17-Dec-15
+Pr_2198,-41.2,146.36,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,17-Dec-15
+Pr_2199,-41.2,146.36,Australia,Pieris rapae,M,No,Yes,Pra1,NA,NA,17-Dec-15
+Pr_1513,-33.66,150.16,Australia,Pieris rapae,M,Yes,No,NA,3,3.1,18-Dec-15
+Pr_1514,-33.66,150.16,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.1,18-Dec-15
+Pr_1851,-35.26,149.06,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.1,18-Dec-15
+Pr_2197,-41.2,146.36,Australia,Pieris rapae,M,No,Yes,Pra2,NA,NA,20-Dec-15
+Pr_2191,-41.2,146.36,Australia,Pieris rapae,F,No,Yes,Pra2,NA,NA,21-Dec-15
+Pr_1814,-37.21,145,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.3,27-Dec-15
+Pr_1815,-37.21,145,Australia,Pieris rapae,M,No,Yes,Pra1,NA,NA,27-Dec-15
+Pr_1810,-37.21,145,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,28-Dec-15
+Pr_1807,-37.21,145,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,28-Dec-15
+Pr_1808,-37.21,145,Australia,Pieris rapae,F,No,Yes,Pra14,NA,NA,28-Dec-15
+Pr_1809,-37.21,145,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,28-Dec-15
+Pr_1816,-37.21,145,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,28-Dec-15
+Pr_1498,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.2,9-Jan-16
+Pr_1501,-26.43,152.76,Australia,Pieris rapae,F,No,Yes,Pra14,NA,NA,9-Jan-16
+Pr_1508,-26.43,152.76,Australia,Pieris rapae,M,No,Yes,Pra14,NA,NA,9-Jan-16
+Pr_1507,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra2,3,3.2,10-Jan-16
+Pr_1500,-26.43,152.76,Australia,Pieris rapae,M,No,Yes,Pra14,NA,NA,10-Jan-16
+Pr_1505,-26.43,152.76,Australia,Pieris rapae,F,No,Yes,Pra2,NA,NA,10-Jan-16
+Pr_1506,-26.43,152.76,Australia,Pieris rapae,F,No,Yes,Pra2,NA,NA,10-Jan-16
+Pr_1499,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra14,3,3.2,14-Jan-16
+Pr_1502,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.2,14-Jan-16
+Pr_1503,-26.43,152.76,Australia,Pieris rapae,F,Yes,Yes,Pra2,3,3.2,14-Jan-16
+Pr_1504,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.2,14-Jan-16
+Pr_1852,-35.26,149.06,Australia,Pieris rapae,M,Yes,Yes,Pra1,3,3.1,17-Jan-16
+Pr_1529,-37.02,145.14,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,5-Mar-16
+Pr_1527,-37.02,145.14,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,7-Mar-16
+Pr_1528,-37.02,145.14,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,13-Mar-16
+Pr_1526,-37.02,145.14,Australia,Pieris rapae,F,Yes,Yes,Pra1,3,3.3,17-Mar-16
+Pr_2195,-41.2,146.36,Australia,Pieris rapae,M,No,Yes,Pra1,NA,NA,10-Mar-17
+Pr_2196,-41.2,146.36,Australia,Pieris rapae,M,No,Yes,Pra2,NA,NA,10-Mar-17
+Pr_2200,-41.2,146.36,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,10-Mar-17
+Pr_2201,-41.2,146.36,Australia,Pieris rapae,F,No,Yes,Pra1,NA,NA,10-Mar-17
+Pr_2202,-41.2,146.36,Australia,Pieris rapae,M,No,Yes,Pra1,NA,NA,10-Mar-17
+Pr_1509,-26.43,152.76,Australia,Pieris rapae,M,Yes,Yes,Pra2,3,3.2,?1/9-14/2016
+Pr_1370,47.91,14.34,Austria,Pieris napi,M,Yes,Yes,Pna_4,NA,NA,3-Aug-15
+Pr_1373,47.91,14.34,Austria,Pieris napi,F,Yes,Yes,Pna_6,NA,NA,3-Aug-15
+Pr_1376,47.89,14.55,Austria,Pieris rapae,M,Yes,No,NA,2,NA,6-Aug-15
+Pr_1929,41.77,23.4,Bulgaria,Pieris rapae,M,Yes,Yes,Pra23,2,2.1,29-Jul-13
+Pr_1930,41.47,24.06,Bulgaria,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,1-Aug-13
+Pr_1931,41.47,24.06,Bulgaria,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,1-Aug-13
+Pr_1932,41.61,24.18,Bulgaria,Pieris rapae,M,Yes,Yes,Pra15,2,2.1,1-Aug-13
+Pr_1933,41.61,25.65,Bulgaria,Pieris rapae,F,Yes,Yes,Pra60,2,2.1,1-Jul-14
+Pr_1934,41.61,25.65,Bulgaria,Pieris rapae,M,Yes,Yes,Pra24,2,2.1,1-Jul-14
+Pr_1935,41.61,25.65,Bulgaria,Pieris rapae,M,Yes,Yes,Pra1,2,2.1,1-Jul-14
+Pr_1220,42.14,24.74,Bulgaria,Pieris napi,F,Yes,Yes,Pna_5,NA,NA,4-Jul-15
+Pr_1225,42.14,24.74,Bulgaria,Pieris napi,F,Yes,Yes,Pna_5,NA,NA,4-Jul-15
+Pr_991,43,-81.29,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,NA,2014
+Pr_275,43.38,-80.35,Canada,Pieris rapae,F,Yes,Yes,Pra76,NA,NA,11-Jul-14
+Pr_278,43.38,-80.35,Canada,Pieris rapae,M,No,Yes,Pra5,NA,NA,11-Jul-14
+Pr_281,43.38,-80.35,Canada,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,14-Jul-14
+Pr_293,43.38,-80.38,Canada,Pieris rapae,M,Yes,Yes,Pra5,4,4.3,18-Jul-14
+Pr_294,43.38,-80.38,Canada,Pieris rapae,F,No,Yes,Pra30,NA,NA,18-Jul-14
+Pr_298,43.38,-80.38,Canada,Pieris rapae,M,No,Yes,Pra27,NA,NA,22-Jul-14
+Pr_301,43.38,-80.38,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,24-Jul-14
+Pr_312,43.38,-80.38,Canada,Pieris rapae,M,Yes,No,NA,4,4.3,25-Jul-14
+Pr_309,43.38,-80.38,Canada,Pieris rapae,M,No,Yes,Pra3,NA,NA,25-Jul-14
+Pr_319,43.38,-80.36,Canada,Pieris rapae,M,Yes,No,NA,NA,NA,7-Aug-14
+Pr_321,43.38,-80.38,Canada,Pieris rapae,M,No,Yes,Pra2,NA,NA,8-Aug-14
+Pr_608,43.5,-80.38,Canada,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,13-Sep-14
+Pr_597,43,-81.29,Canada,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,16-Sep-14
+Pr_606,43.5,-80.38,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,20-Sep-14
+Pr_1367,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra4,4,4.5,3-Aug-15
+Pr_1365,52.12,-106.65,Canada,Pieris rapae,M,Yes,Yes,Pra3,4,4.5,7-Aug-15
+Pr_1366,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra5,4,4.5,9-Aug-15
+Pr_1362,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,9-Aug-15
+Pr_1363,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,4.5,10-Aug-15
+Pr_1364,52.12,-106.65,Canada,Pieris rapae,M,Yes,Yes,Pra3,4,4.5,10-Aug-15
+Pr_1358,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra2,4,4.5,11-Aug-15
+Pr_1360,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,4.5,11-Aug-15
+Pr_1361,52.12,-106.65,Canada,Pieris rapae,F,Yes,Yes,Pra3,4,4.5,11-Aug-15
+Pr_1910,Carolina_Biological,Carolina_Biological,Carolina Biological,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,17-Oct-16
+Pr_1911,Carolina_Biological,Carolina_Biological,Carolina Biological,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,17-Oct-16
+Pr_1912,Carolina_Biological,Carolina_Biological,Carolina Biological,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,17-Oct-16
+Pr_1913,Carolina_Biological,Carolina_Biological,Carolina Biological,Pieris rapae,M,No,Yes,Pra3,NA,NA,17-Oct-16
+Pr_1955,31.49,98.22,China,Pieris rapae,F,Yes,No,NA,7,7.1,20-Jun-12
+Pr_1962,31.49,98.22,China,Pieris rapae,M,Yes,No,NA,NA,NA,20-Jun-12
+Pr_1956,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra7,7,7.1,20-Jun-12
+Pr_1957,31.49,98.22,China,Pieris rapae,F,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1958,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1959,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1960,31.49,98.22,China,Pieris rapae,F,Yes,Yes,Pra7,7,7.1,20-Jun-12
+Pr_1961,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1963,31.49,98.22,China,Pieris rapae,F,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1964,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1965,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra64,7,7.1,20-Jun-12
+Pr_1966,31.49,98.22,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,20-Jun-12
+Pr_1967,43.82,127.41,China,Pieris rapae,M,Yes,Yes,Pra7,7,NA,25-Aug-12
+Pr_1949,27.94,108.62,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,2-Nov-12
+Pr_1950,27.94,108.62,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,2-Nov-12
+Pr_1951,27.94,108.62,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,2-Nov-12
+Pr_1952,27.94,108.62,China,Pieris rapae,M,Yes,Yes,Pra1,7,7.1,2-Nov-12
+Pr_1953,27.94,108.62,China,Pieris rapae,F,Yes,Yes,Pra62,7,7.1,2-Nov-12
+Pr_1954,27.94,108.62,China,Pieris rapae,M,Yes,Yes,Pra63,7,7.1,2-Nov-12
+Pr_2007,31.14,104.4,China,Pieris rapae,M,Yes,Yes,Pra22,7,NA,8-Jul-16
+Pr_2008,36.76,118,China,Pieris rapae,M,Yes,Yes,Pra1,7,NA,10-Jul-16
+Pr_2009,35.9,115.63,China,Pieris canidia,M,Yes,Yes,Pca_1,NA,NA,26-Jul-16
+Pr_949,49.5,17,Czech Republic,Pieris rapae,F,Yes,No,NA,NA,NA,18-Aug-14
+Pr_944,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra4,2,2.2,18-Aug-14
+Pr_946,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra48,2,2.2,18-Aug-14
+Pr_948,49.5,17,Czech Republic,Pieris rapae,F,Yes,Yes,Pra2,2,2.2,18-Aug-14
+Pr_950,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra9,2,2.2,18-Aug-14
+Pr_951,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra31,2,2.2,18-Aug-14
+Pr_954,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,18-Aug-14
+Pr_955,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra14,2,2.2,18-Aug-14
+Pr_957,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,18-Aug-14
+Pr_959,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra4,2,2.2,18-Aug-14
+Pr_945,49.5,17,Czech Republic,Pieris rapae,M,No,Yes,Pra2,NA,NA,18-Aug-14
+Pr_947,49.5,17,Czech Republic,Pieris rapae,F,No,Yes,Pra1,NA,NA,18-Aug-14
+Pr_953,49.5,17,Czech Republic,Pieris rapae,F,Yes,Yes,Pra2,NA,NA,18-Aug-14
+Pr_956,49.5,17,Czech Republic,Pieris rapae,F,No,Yes,Pra2,NA,NA,18-Aug-14
+Pr_958,49.5,17,Czech Republic,Pieris rapae,M,No,Yes,Pra18,NA,NA,18-Aug-14
+Pr_960,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,28-Aug-14
+Pr_961,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,28-Aug-14
+Pr_965,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra47,2,2.2,28-Aug-14
+Pr_970,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra1,2,2.2,28-Aug-14
+Pr_975,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,28-Aug-14
+Pr_976,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra9,2,2.2,28-Aug-14
+Pr_977,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra49,2,2.2,28-Aug-14
+Pr_982,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra4,2,2.2,28-Aug-14
+Pr_983,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,28-Aug-14
+Pr_985,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra2,2,2.2,28-Aug-14
+Pr_988,49.5,17,Czech Republic,Pieris rapae,F,Yes,Yes,Pra24,2,2.2,28-Aug-14
+Pr_962,49.5,17,Czech Republic,Pieris rapae,M,No,Yes,Pra15,NA,NA,28-Aug-14
+Pr_963,49.5,17,Czech Republic,Pieris rapae,M,No,Yes,Pra1,NA,NA,28-Aug-14
+Pr_964,49.5,17,Czech Republic,Pieris rapae,M,No,Yes,Pra31,NA,NA,28-Aug-14
+Pr_966,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra47,NA,NA,28-Aug-14
+Pr_967,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_968,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra18,NA,NA,28-Aug-14
+Pr_969,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra36,NA,NA,28-Aug-14
+Pr_971,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra36,NA,NA,28-Aug-14
+Pr_972,49.5,17,Czech Republic,Pieris rapae,M,Yes,Yes,Pra36,NA,NA,28-Aug-14
+Pr_973,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_974,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_978,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra50,NA,NA,28-Aug-14
+Pr_979,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_980,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_981,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra24,NA,NA,28-Aug-14
+Pr_984,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_986,49.5,17,Czech Republic,Pieris rapae,?,No,Yes,Pra2,NA,NA,28-Aug-14
+Pr_780,51.95,0.44,England,Pieris rapae,M,Yes,No,NA,NA,NA,2011
+Pr_781,51.95,0.44,England,Pieris rapae,M,Yes,No,NA,NA,NA,2011
+Pr_782,51.95,0.44,England,Pieris rapae,M,Yes,No,NA,NA,NA,2011
+Pr_779,51.95,0.44,England,Pieris rapae,M,Yes,Yes,Pra1,2,NA,2011
+Pr_784,51.95,0.44,England,Pieris rapae,M,Yes,Yes,Pra33,2,NA,2011
+Pr_776,51.95,0.44,England,Pieris rapae,M,No,Yes,Pra32,NA,NA,2011
+Pr_778,51.95,0.44,England,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,2011
+Pr_785,51.95,0.44,England,Pieris rapae,M,Yes,Yes,Pra5,NA,NA,2011
+Pr_1878,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra50,2,2.3,2016
+Pr_1879,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra4,2,2.3,2016
+Pr_1880,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra2,2,2.3,2016
+Pr_1881,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra31,2,2.3,2016
+Pr_1882,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra1,2,2.3,2016
+Pr_1883,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra31,2,2.3,2016
+Pr_1884,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra47,2,2.3,2016
+Pr_1885,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra56,2,2.3,2016
+Pr_1886,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra2,2,2.3,2016
+Pr_1887,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra57,2,2.3,2016
+Pr_1888,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra36,2,2.3,2016
+Pr_1889,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra4,2,2.3,2016
+Pr_1890,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra36,2,2.3,2016
+Pr_1891,52.01,0.25,England,Pieris rapae,F,Yes,Yes,Pra1,2,2.3,2016
+Pr_1892,52.01,0.25,England,Pieris rapae,M,Yes,Yes,Pra4,2,2.3,2016
+Pr_1970,51.75,-1.18,England,Pieris rapae,M,Yes,Yes,Pra47,2,NA,30-Apr-14
+Pr_1971,51.74,-0.8,England,Pieris rapae,M,Yes,Yes,Pra2,2,NA,13-Jun-14
+Pr_1972,50.57,-3.9,England,Pieris rapae,M,Yes,Yes,Pra5,2,NA,7-Sep-14
+Pr_2056,57.73,27.36,Estonia,Pieris rapae,M,Yes,Yes,Pra24,2,NA,12-Jun-10
+Pr_2057,57.73,27.36,Estonia,Pieris rapae,M,Yes,Yes,Pra9,2,NA,12-Jun-10
+Pr_2058,57.73,27.36,Estonia,Pieris rapae,M,Yes,Yes,Pra2,2,NA,12-Jun-10
+Pr_2059,57.84,27.46,Estonia,Pieris rapae,M,Yes,Yes,Pra69,2,NA,12-Jun-10
+Pr_789,60.23,25.04,Finland,Pieris rapae,M,Yes,No,NA,NA,NA,2011
+Pr_796,60.23,25.04,Finland,Pieris rapae,F,Yes,No,NA,NA,NA,2011
+Pr_788,60.23,25.04,Finland,Pieris rapae,M,No,Yes,Pra2,NA,NA,2011
+Pr_792,60.23,25.04,Finland,Pieris rapae,M,Yes,Yes,Pra34,NA,NA,2011
+Pr_794,60.23,25.04,Finland,Pieris rapae,M,Yes,Yes,Pra36,NA,NA,2011
+Pr_795,60.23,25.04,Finland,Pieris rapae,M,No,Yes,Pra7,NA,NA,2011
+Pr_793,60.23,25.04,Finland,Pieris rapae,M,Yes,Yes,Pra35,2,NA,3-Jul-11
+Pr_2075,42.39,2.1,France,Pieris rapae,M,Yes,Yes,Pra4,2,NA,24-Jul-07
+Pr_2060,43.6,5.17,France,Pieris rapae,F,Yes,Yes,Pra14,2,NA,24-May-10
+Pr_2055,44.39,5.49,France,Pieris rapae,F,Yes,Yes,Pra2,2,NA,18-Aug-10
+Pr_2040,42.08,9.19,France,Pieris rapae,M,Yes,Yes,Pra9,2,NA,27-May-11
+Pr_1919,42.93,2.96,France,Pieris rapae,M,Yes,Yes,Pra4,2,NA,26-Jul-12
+Pr_1920,43.52,3.67,France,Pieris rapae,M,Yes,Yes,Pra2,2,NA,28-Jul-12
+Pr_1918,44.2,7.07,France,Pieris rapae,M,Yes,Yes,Pra2,2,NA,9-Aug-12
+Pr_1980,46.37,5.9,France,Pieris rapae,M,Yes,Yes,Pra2,2,NA,29-Jun-15
+Pr_1976,43.68,-1,France,Pieris rapae,M,Yes,Yes,Pra14,2,2.4,16-Jul-15
+Pr_1977,46.3,-1.1,France,Pieris rapae,M,Yes,Yes,Pra2,2,NA,19-Jul-15
+Pr_1978,46.43,-1.03,France,Pieris rapae,F,Yes,Yes,Pra2,2,NA,19-Jul-15
+Pr_1979,44.5,0.15,France,Pieris rapae,F,Yes,Yes,Pra14,2,2.4,21-Jul-15
+Pr_924,42,45.57,Georgia,Pieris napi,F,Yes,No,NA,NA,NA,19-Jul-14
+Pr_921,42,45.57,Georgia,Pieris napi,F,Yes,Yes,Pna_2,NA,NA,19-Jul-14
+Pr_925,42,45.57,Georgia,Pieris napi,F,Yes,Yes,Pps_1,NA,NA,19-Jul-14
+Pr_919,42,45.57,Georgia,Pieris rapae,M,Yes,Yes,Pra1,7,NA,19-Jul-14
+Pr_922,42,45.57,Georgia,Pieris rapae,M,Yes,Yes,Pra22,7,NA,19-Jul-14
+Pr_923,42,45.57,Georgia,Pieris rapae,F,Yes,Yes,Pra10,7,NA,19-Jul-14
+Pr_918,42,45.57,Georgia,Pieris rapae,M,No,Yes,Pra41,NA,NA,19-Jul-14
+Pr_926,41.6,41.59,Georgia,Pieris rapae,M,Yes,Yes,Pra42,7,7.2,25-Jul-14
+Pr_927,41.6,41.59,Georgia,Pieris rapae,M,Yes,Yes,Pra43,7,7.2,25-Jul-14
+Pr_928,41.6,41.59,Georgia,Pieris rapae,F,Yes,Yes,Pra22,7,7.2,25-Jul-14
+Pr_929,41.6,41.59,Georgia,Pieris rapae,M,Yes,Yes,Pra44,7,7.2,25-Jul-14
+Pr_930,41.6,41.59,Georgia,Pieris rapae,M,Yes,Yes,Pra7,7,7.2,25-Jul-14
+Pr_931,41.6,41.59,Georgia,Pieris rapae,M,Yes,Yes,Pra42,7,7.2,25-Jul-14
+Pr_940,42.28,41.68,Georgia,Pieris rapae,M,Yes,No,NA,7,7.2,28-Jul-14
+Pr_936,42.28,41.68,Georgia,Pieris rapae,M,Yes,Yes,Pra42,7,7.2,28-Jul-14
+Pr_938,42.28,41.68,Georgia,Pieris rapae,M,Yes,Yes,Pra39,7,7.2,28-Jul-14
+Pr_939,42.28,41.68,Georgia,Pieris rapae,M,Yes,Yes,Pra47,7,7.2,28-Jul-14
+Pr_941,42.28,41.68,Georgia,Pieris rapae,M,Yes,Yes,Pra2,7,7.2,28-Jul-14
+Pr_942,42.28,41.68,Georgia,Pieris rapae,M,Yes,Yes,Pra42,7,7.2,28-Jul-14
+Pr_937,42.28,41.68,Georgia,Pieris rapae,M,No,Yes,Pra46,NA,NA,28-Jul-14
+Pr_934,42.2,41.95,Georgia,Pieris dulcinea,M,Yes,No,NA,NA,NA,29-Jul-14
+Pr_935,42.2,41.95,Georgia,Pieris rapae,M,Yes,No,NA,NA,NA,29-Jul-14
+Pr_933,42.2,41.95,Georgia,Pieris rapae,M,No,Yes,Pra45,NA,NA,29-Jul-14
+Pr_1152,36.13,-5.35,Gibraltar,Pieris brassicae,M,Yes,Yes,Pbr_1,NA,NA,8-May-15
+Pr_1153,36.13,-5.35,Gibraltar,Pieris brassicae,M,Yes,Yes,Pbr_2,NA,NA,8-May-15
+Pr_1154,36.13,-5.35,Gibraltar,Pieris brassicae,M,Yes,Yes,Pbr_3,NA,NA,8-May-15
+Pr_1155,36.13,-5.35,Gibraltar,Pieris rapae,M,Yes,Yes,Pra2,2,NA,8-May-15
+Pr_2026,35.3,23.7,Greece,Pieris rapae,F,Yes,Yes,Pra2,7,NA,5-Apr-12
+Pr_2027,35.31,23.81,Greece,Pieris rapae,M,Yes,Yes,Pra67,7,NA,5-Apr-12
+Pr_1928,41.31,24.05,Greece,Pieris rapae,F,Yes,Yes,Pra59,2,2.1,25-Jul-13
+Pr_1942,39.13,22.84,Greece,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,18-May-14
+Pr_1943,40.32,21.65,Greece,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,19-May-14
+Pr_1944,38.48,22.51,Greece,Pieris rapae,M,Yes,Yes,Pra5,2,2.1,22-May-14
+Pr_1945,38.02,22.23,Greece,Pieris rapae,F,Yes,Yes,Pra2,2,2.1,28-May-14
+Pr_1936,40.96,26.07,Greece,Pieris rapae,F,Yes,Yes,Pra2,2,2.1,2-Jul-14
+Pr_1938,41.14,26.24,Greece,Pieris rapae,M,Yes,Yes,Pra4,2,2.1,2-Jul-14
+Pr_1937,40.23,20.96,Greece,Pieris rapae,F,Yes,Yes,Pra61,2,2.1,4-Jul-14
+Pr_1939,40.56,21.23,Greece,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,12-Jul-14
+Pr_1940,39.22,20.84,Greece,Pieris rapae,M,Yes,Yes,Pra2,2,2.1,15-Jul-14
+Pr_2041,39.19,9.15,Italy,Pieris rapae,F,Yes,Yes,Pra2,2,NA,14-May-11
+Pr_2031,38.01,12.33,Italy,Pieris rapae,M,Yes,Yes,Pra2,2,NA,12-Jun-11
+Pr_1917,42.36,10.9,Italy,Pieris rapae,F,Yes,Yes,Pra2,2,NA,10-Jun-12
+Pr_1924,42.46,11.42,Italy,Pieris rapae,M,Yes,Yes,Pra2,2,NA,12-Jul-13
+Pr_1989,44.93,10.37,Italy,Pieris rapae,M,Yes,Yes,Pra36,2,2.5,11-May-15
+Pr_1983,42.58,11.14,Italy,Pieris rapae,F,Yes,No,NA,2,2.5,26-May-15
+Pr_1973,40.67,16.61,Italy,Pieris rapae,F,Yes,Yes,Pra2,2,2.5,3-Jun-15
+Pr_1981,43.45,11.8,Italy,Pieris rapae,F,Yes,Yes,Pra1,2,2.5,29-Jul-15
+Pr_1381,46.65,11.04,Italy,Pieris rapae,M,Yes,Yes,Pra15,2,2.5,10-Aug-15
+Pr_1382,46.65,11.04,Italy,Pieris rapae,M,Yes,Yes,Pra14,2,2.5,10-Aug-15
+Pr_1383,46.65,11.04,Italy,Pieris rapae,M,Yes,Yes,Pra2,2,2.5,10-Aug-15
+Pr_1384,46.65,11.04,Italy,Pieris rapae,F,Yes,Yes,Pra2,2,2.5,10-Aug-15
+Pr_1385,46.65,11.04,Italy,Pieris rapae,M,Yes,Yes,Pra2,2,2.5,10-Aug-15
+Pr_1386,46.65,11.04,Italy,Pieris rapae,M,Yes,Yes,Pra14,2,2.5,10-Aug-15
+Pr_887,36.14,140.12,Japan,Pieris rapae,F,Yes,Yes,Pra1,7,7.3,27-Oct-14
+Pr_888,36.14,140.12,Japan,Pieris rapae,M,Yes,Yes,Pra1,7,7.3,27-Oct-14
+Pr_891,36.14,140.12,Japan,Pieris rapae,M,Yes,Yes,Pra1,7,7.3,27-Oct-14
+Pr_893,36.14,140.12,Japan,Pieris rapae,M,Yes,Yes,Pra77,7,7.3,27-Oct-14
+Pr_894,36.14,140.12,Japan,Pieris rapae,M,Yes,Yes,Pra47,7,7.3,27-Oct-14
+Pr_886,36.14,140.12,Japan,Pieris rapae,M,No,Yes,Pra39,NA,NA,27-Oct-14
+Pr_889,36.14,140.12,Japan,Pieris rapae,M,No,Yes,Pra1,NA,NA,27-Oct-14
+Pr_892,36.14,140.12,Japan,Pieris rapae,M,No,Yes,Pra40,NA,NA,27-Oct-14
+Pr_2010,36.26,137.97,Japan,Pieris rapae,M,Yes,Yes,Pra47,7,7.3,4-Aug-16
+Pr_2011,37.97,139.33,Japan,Pieris rapae,M,Yes,Yes,Pra1,7,7.3,6-Aug-16
+Pr_2012,37.97,139.33,Japan,Pieris rapae,F,Yes,Yes,Pra1,7,7.3,6-Aug-16
+Pr_2051,35.9,14.41,Malta,Pieris rapae,F,Yes,No,NA,2,2.6,17-Jun-10
+Pr_2052,35.9,14.41,Malta,Pieris rapae,M,Yes,Yes,Pra2,2,2.6,17-Jun-10
+Pr_2053,35.9,14.41,Malta,Pieris rapae,M,Yes,Yes,Pra2,2,2.6,17-Jun-10
+Pr_2046,35.86,14.4,Malta,Pieris rapae,F,Yes,No,NA,2,2.6,19-May-11
+Pr_2047,35.86,14.4,Malta,Pieris rapae,M,Yes,Yes,Pra36,2,2.6,19-May-11
+Pr_2048,35.86,14.4,Malta,Pieris rapae,M,Yes,Yes,Pra2,2,2.6,19-May-11
+Pr_2042,36.04,14.27,Malta,Pieris rapae,M,Yes,Yes,Pra1,2,2.6,20-May-11
+Pr_2043,36.04,14.27,Malta,Pieris rapae,M,Yes,Yes,Pra2,2,2.6,20-May-11
+Pr_2044,36.04,14.27,Malta,Pieris rapae,M,Yes,Yes,Pra2,2,2.6,20-May-11
+Pr_2045,36.04,14.27,Malta,Pieris rapae,M,Yes,Yes,Pra36,2,2.6,20-May-11
+Pr_2077,20.48,-101.4,Mexico,Pieris rapae,F,Yes,Yes,Pra3,4,4.x,10-Sep-15
+Pr_2079,20.48,-101.4,Mexico,Pieris rapae,M,Yes,Yes,Pra3,4,4.x,10-Sep-15
+Pr_1990,30.41,-107.89,Mexico,Pieris rapae,F,Yes,Yes,Pra3,4,4.7,27-Oct-15
+Pr_1991,30.41,-107.89,Mexico,Pieris rapae,F,Yes,Yes,Pra3,4,4.7,27-Oct-15
+Pr_1992,30.85,-108.38,Mexico,Pieris rapae,M,Yes,Yes,Pra3,4,4.7,27-Oct-15
+Pr_1993,24.09,-104.57,Mexico,Pieris rapae,F,Yes,Yes,Pra4,4,4.x,5-Nov-15
+Pr_2014,31.26,-7.82,Morocco,Pieris rapae,M,Yes,Yes,Pra1,1,NA,26-May-06
+Pr_2039,35.12,-5.19,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,25-Jun-11
+Pr_2038,34.99,-4.83,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,27-Jun-11
+Pr_2037,34.82,-2.41,Morocco,Pieris rapae,F,Yes,Yes,Pra25,1,1.2,28-Jun-11
+Pr_2034,34.08,-4.12,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,29-Jun-11
+Pr_2035,34.12,-4.04,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,29-Jun-11
+Pr_2036,34.15,-4.01,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,29-Jun-11
+Pr_2033,33.48,-5.02,Morocco,Pieris rapae,M,Yes,Yes,Pra2,1,1.2,30-Jun-11
+Pr_2032,32.99,-5.08,Morocco,Pieris rapae,M,Yes,Yes,Pra2,1,1.2,1-Jul-11
+Pr_2050,33.66,-4.85,Morocco,Pieris rapae,F,Yes,Yes,Pra25,1,1.2,2-Jul-11
+Pr_2029,35.47,-5.82,Morocco,Pieris rapae,M,Yes,Yes,Pra14,1,1.2,12-May-12
+Pr_2028,35.7,-5.63,Morocco,Pieris rapae,M,Yes,Yes,Pra25,1,1.2,16-May-12
+Pr_1005,-37.15,175.56,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,1-Nov-14
+Pr_1010,-37.15,175.56,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,8-Nov-14
+Pr_1011,-37.15,175.56,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,8-Nov-14
+Pr_1013,-37.15,175.56,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,8-Nov-14
+Pr_1232,-37.42,175.93,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,27-Dec-14
+Pr_1259,-37.42,175.93,New Zealand,Pieris rapae,M,Yes,Yes,Pra1,3,8.1,27-Dec-14
+Pr_1260,-37.42,175.93,New Zealand,Pieris rapae,M,Yes,Yes,Pra1,3,8.1,27-Dec-14
+Pr_1261,-37.42,175.93,New Zealand,Pieris rapae,M,Yes,Yes,Pra1,3,8.1,27-Dec-14
+Pr_1262,-37.42,175.93,New Zealand,Pieris rapae,M,Yes,Yes,Pra1,3,8.1,27-Dec-14
+Pr_1238,-37.42,175.93,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,28-Dec-14
+Pr_1245,-37.42,175.93,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,28-Dec-14
+Pr_1251,-37.42,175.93,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,28-Dec-14
+Pr_1252,-37.42,175.93,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,8.1,28-Dec-14
+Pr_1855,-41.31,174.77,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,29-Jan-16
+Pr_1854,-41.31,174.76,New Zealand,Pieris rapae,?,No,Yes,Pra2,NA,NA,21-Feb-16
+Pr_1515,-43.53,172.56,New Zealand,Pieris rapae,F,Yes,Yes,Pra1,3,NA,6-Mar-16
+Pr_2157,-43.52,172.58,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2158,-43.52,172.58,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2159,-43.52,172.58,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2160,-43.52,172.58,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2161,-43.52,172.58,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2162,-43.52,172.58,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2163,-43.52,172.58,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_2164,-43.52,172.58,New Zealand,Pieris rapae,M,No,Yes,Pra1,NA,NA,1-Jan-17
+Pr_1249,-37.42,175.93,New Zealand,Pieris rapae,F,No,Yes,Pra1,NA,NA,?12/28/2014
+Pr_1994,52.87,14.2,Poland,Pieris rapae,F,Yes,Yes,Pra1,2,2.7,29-Jul-16
+Pr_1995,52.3,16.89,Poland,Pieris rapae,M,Yes,Yes,Pra1,2,2.7,30-Jul-16
+Pr_2001,53.49,16.55,Poland,Pieris rapae,F,Yes,Yes,Pra2,2,2.7,31-Jul-16
+Pr_2002,53.16,17.82,Poland,Pieris rapae,M,Yes,Yes,Pra2,2,2.7,31-Jul-16
+Pr_2003,53.24,19.29,Poland,Pieris rapae,M,Yes,Yes,Pra66,2,2.7,1-Aug-16
+Pr_1996,53.39,21.58,Poland,Pieris rapae,M,Yes,Yes,Pra2,2,2.7,2-Aug-16
+Pr_2004,53.45,20.74,Poland,Pieris rapae,M,Yes,Yes,Pra14,2,2.7,2-Aug-16
+Pr_1997,53.37,22.54,Poland,Pieris rapae,M,Yes,Yes,Pra1,2,2.7,3-Aug-16
+Pr_1998,51.45,21.99,Poland,Pieris rapae,F,Yes,Yes,Pra2,2,2.7,5-Aug-16
+Pr_1999,50.91,20.94,Poland,Pieris rapae,M,Yes,Yes,Pra2,2,2.7,6-Aug-16
+Pr_2000,49.61,19.5,Poland,Pieris rapae,M,Yes,Yes,Pra1,2,2.7,7-Aug-16
+Pr_2005,49.61,19.5,Poland,Pieris rapae,F,Yes,Yes,Pra23,2,2.7,7-Aug-16
+Pr_775,40.01,-8.73,Portugal,Pieris rapae,M,Yes,No,NA,2,NA,5-Jun-14
+Pr_774,40.01,-8.73,Portugal,Pieris rapae,F,Yes,Yes,Pra2,NA,NA,5-Jun-14
+Pr_2071,44.06,27.65,Romania,Pieris rapae,F,Yes,Yes,Pra2,2,2.8,23-May-07
+Pr_2070,45.09,26.53,Romania,Pieris rapae,M,Yes,Yes,Pra14,2,2.8,26-May-07
+Pr_2069,46.78,23.96,Romania,Pieris rapae,M,Yes,Yes,Pra70,2,2.8,30-May-07
+Pr_2072,45.18,22.3,Romania,Pieris rapae,M,Yes,Yes,Pra2,2,2.8,5-Jun-07
+Pr_2068,45.18,24.11,Romania,Pieris rapae,F,Yes,Yes,Pra2,2,2.8,7-Jun-07
+Pr_2067,44.94,26.03,Romania,Pieris rapae,F,Yes,Yes,Pra14,2,2.8,26-Jul-07
+Pr_2074,47.38,25.48,Romania,Pieris rapae,F,Yes,Yes,Pra4,2,2.8,7-Aug-07
+Pr_2073,47.18,27.48,Romania,Pieris rapae,F,Yes,Yes,Pra2,2,2.8,28-Sep-07
+Pr_2063,46.74,25.66,Romania,Pieris rapae,M,Yes,Yes,Pra2,2,2.8,1-Jun-08
+Pr_2062,45.3,22.89,Romania,Pieris rapae,F,Yes,Yes,Pra2,2,2.8,21-Jul-08
+Pr_2054,47.76,23.61,Romania,Pieris rapae,M,Yes,Yes,Pra2,2,NA,29-Jul-10
+Pr_1941,44.47,28.49,Romania,Pieris rapae,M,Yes,Yes,Pra36,2,NA,27-Jul-14
+Pr_992,62.03,129.33,Russia,Pieris rapae,M,Yes,Yes,Pra47,6,6.1,2014
+Pr_993,62.03,129.33,Russia,Pieris rapae,M,Yes,Yes,Pra47,6,6.1,2014
+Pr_2090,59.45,94.07,Russia,Pieris rapae,M,Yes,No,NA,6,NA,8-Aug-15
+Pr_2089,59.45,94.07,Russia,Pieris rapae,M,Yes,Yes,Pra1,6,NA,8-Aug-15
+Pr_2094,53.91,56.47,Russia,Pieris napi,F,Yes,Yes,Pna_4,NA,NA,6/12-19/2016
+Pr_2096,53.91,56.47,Russia,Pieris rapae,M,Yes,Yes,Pra2,2,NA,6/12-19/2016
+Pr_2099,53.91,56.47,Russia,Pieris rapae,F,Yes,Yes,Pra2,2,NA,6/12-19/2016
+Pr_2100,53.91,56.47,Russia,Pieris rapae,F,Yes,Yes,Pra2,2,NA,6/12-19/2016
+Pr_2107,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra71,6,6.1,6/7-11/2016
+Pr_2108,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra71,6,6.1,6/7-11/2016
+Pr_2109,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra47,6,6.1,6/7-11/2016
+Pr_2110,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra71,6,6.1,6/7-11/2016
+Pr_2101,62.02,129.6,Russia,Pieris rapae,F,Yes,Yes,Pra71,6,6.1,7/7-11/2016
+Pr_2102,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra71,6,6.1,7/7-11/2016
+Pr_2103,62.02,129.6,Russia,Pieris rapae,F,Yes,Yes,Pra47,6,6.1,7/7-11/2016
+Pr_2104,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra71,6,6.1,7/7-11/2016
+Pr_2105,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra47,6,6.1,7/7-11/2016
+Pr_2106,62.02,129.6,Russia,Pieris rapae,M,Yes,Yes,Pra47,6,6.1,7/7-11/2016
+Pr_2120,33.48,126.71,South Korea,Pieris rapae,M,Yes,Yes,Pra1,NA,NA,22-Jul-02
+Pr_2115,37.17,128.37,South Korea,Pieris rapae,M,Yes,Yes,Pra1,NA,NA,7-Jun-03
+Pr_2116,37.77,127.78,South Korea,Pieris rapae,M,Yes,Yes,Pra1,NA,NA,17-Jul-03
+Pr_2123,37.42,126.42,South Korea,Pieris rapae,F,Yes,No,NA,7,NA,19-Jul-03
+Pr_2121,37.42,126.42,South Korea,Pieris rapae,M,Yes,No,NA,NA,NA,19-Jul-03
+Pr_2119,37.77,127.79,South Korea,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,28-Jul-03
+Pr_2113,36.61,129.39,South Korea,Pieris rapae,M,Yes,Yes,Pra1,NA,NA,8-Oct-03
+Pr_2117,37.17,127.06,South Korea,Pieris rapae,F,Yes,Yes,Pra74,7,NA,5-Jul-06
+Pr_2118,33.43,126.47,South Korea,Pieris rapae,M,Yes,Yes,Pra75,NA,NA,10-Apr-09
+Pr_2111,36.45,126.88,South Korea,Pieris rapae,F,Yes,Yes,Pra72,7,NA,8-Jun-11
+Pr_2112,36.45,126.88,South Korea,Pieris rapae,M,Yes,Yes,Pra73,7,NA,8-Jun-11
+Pr_844,42.01,2.47,Spain,Pieris rapae,F,Yes,Yes,Pra7,NA,NA,2014
+Pr_857,41.7,2.43,Spain,Pieris rapae,M,No,Yes,Pra4,NA,NA,2014
+Pr_2061,42.05,-8.94,Spain,Pieris rapae,F,Yes,Yes,Pra65,2,NA,5-Apr-08
+Pr_2066,36.84,-5.35,Spain,Pieris rapae,M,Yes,Yes,Pra14,2,NA,2-May-08
+Pr_2065,42.42,-5.31,Spain,Pieris rapae,M,Yes,Yes,Pra37,2,NA,18-Jun-08
+Pr_2049,37.1,-3.53,Spain,Pieris rapae,F,Yes,Yes,Pra2,2,NA,13-May-11
+Pr_868,40.58,-3.25,Spain,Pieris rapae,M,Yes,Yes,Pra2,NA,NA,29-Mar-12
+Pr_869,40.58,-3.25,Spain,Pieris rapae,M,Yes,Yes,Pra37,2,NA,20-Apr-13
+Pr_875,40.9,-3.02,Spain,Pieris rapae,F,Yes,No,NA,NA,NA,13-Aug-13
+Pr_873,40.9,-4.02,Spain,Pieris rapae,F,No,Yes,Pra22,NA,NA,13-Aug-13
+Pr_874,40.9,-4.02,Spain,Pieris rapae,F,Yes,Yes,Pra14,NA,NA,13-Aug-13
+Pr_867,40.58,-3.25,Spain,Pieris rapae,M,Yes,Yes,Pra15,2,2.4,30-Mar-14
+Pr_880,40.46,-3.34,Spain,Pieris rapae,M,Yes,Yes,Pra14,2,2.4,1-Apr-14
+Pr_882,40.46,-3.34,Spain,Pieris rapae,M,Yes,Yes,Pra14,2,2.4,1-Apr-14
+Pr_879,40.5,-3.26,Spain,Pieris rapae,M,Yes,Yes,Pra1,2,2.4,13-Apr-14
+Pr_876,40.57,-3.15,Spain,Pieris rapae,M,Yes,Yes,Pra2,2,2.4,7-May-14
+Pr_842,42.01,2.47,Spain,Pieris rapae,M,Yes,No,NA,2,2.4,6-Jul-14
+Pr_877,40.9,-3.02,Spain,Pieris rapae,M,Yes,Yes,Pra38,2,2.4,15-Aug-14
+Pr_883,40.9,-4.02,Spain,Pieris rapae,M,Yes,No,NA,NA,NA,5-Sep-14
+Pr_1984,40.62,-2.72,Spain,Pieris rapae,M,Yes,Yes,Pra1,2,2.4,7-Jun-15
+Pr_1985,39.19,-1.74,Spain,Pieris rapae,F,Yes,Yes,Pra65,2,2.4,8-Jun-15
+Pr_1974,40.34,-5.79,Spain,Pieris rapae,M,Yes,Yes,Pra14,2,2.4,20-Jun-15
+Pr_1975,40.02,-5.73,Spain,Pieris rapae,M,Yes,Yes,Pra1,2,2.4,21-Jun-15
+Pr_1986,39.54,-3.24,Spain,Pieris rapae,F,Yes,Yes,Pra2,2,2.4,29-Jun-15
+Pr_1987,41.29,-1.51,Spain,Pieris rapae,M,Yes,Yes,Pra14,2,2.4,20-Jul-15
+Pr_1982,41.53,1.23,Spain,Pieris rapae,M,Yes,Yes,Pra1,2,2.4,25-Aug-15
+Pr_1988,41.61,1.18,Spain,Pieris rapae,F,Yes,Yes,Pra2,2,2.4,16-Mar-16
+Pr_1927,59.75,18.66,Sweden,Pieris rapae,M,Yes,Yes,Pra49,2,NA,7-Jun-13
+Pr_1926,59.63,18.52,Sweden,Pieris rapae,F,Yes,Yes,Pra2,2,NA,28-Aug-13
+Pr_1179,25.02,121.53,Taiwan,Pieris rapae,F,Yes,Yes,Pra1,7,7.4,6-May-15
+Pr_1180,25.02,121.53,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,6-May-15
+Pr_1181,25.02,121.53,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,6-May-15
+Pr_1184,25.02,121.53,Taiwan,Pieris rapae,M,Yes,Yes,Pra53,7,7.4,6-May-15
+Pr_1177,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,6-May-15
+Pr_1178,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,6-May-15
+Pr_1182,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra7,NA,NA,6-May-15
+Pr_1183,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,6-May-15
+Pr_1186,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,6-May-15
+Pr_1187,25.02,121.53,Taiwan,Pieris rapae,M,No,Yes,Pra53,NA,NA,6-May-15
+Pr_1170,24.84,121.27,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,14-May-15
+Pr_1163,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,19-May-15
+Pr_1164,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,19-May-15
+Pr_1166,24.96,121.45,Taiwan,Pieris rapae,F,Yes,Yes,Pra1,7,7.4,19-May-15
+Pr_1171,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra7,7,7.4,19-May-15
+Pr_1173,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,19-May-15
+Pr_1175,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra7,7,7.4,19-May-15
+Pr_1176,24.96,121.45,Taiwan,Pieris rapae,M,Yes,Yes,Pra1,7,7.4,19-May-15
+Pr_1165,24.96,121.45,Taiwan,Pieris rapae,M,No,Yes,Pra53,NA,NA,19-May-15
+Pr_1167,24.96,121.45,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,19-May-15
+Pr_1168,24.96,121.45,Taiwan,Pieris rapae,M,No,Yes,Pra1,NA,NA,19-May-15
+Pr_1169,25.02,121.53,Taiwan,Pieris rapae,F,Yes,Yes,Pra1,NA,NA,19-May-15
+Pr_1172,24.96,121.45,Taiwan,Pieris rapae,M,No,Yes,Pra53,NA,NA,19-May-15
+Pr_1174,24.96,121.45,Taiwan,Pieris rapae,F,No,Yes,Pra1,NA,NA,19-May-15
+Pr_2013,37.18,9.73,Tunisia,Pieris rapae,F,Yes,Yes,Pra25,1,NA,26-Apr-08
+Pr_2064,36.78,8.75,Tunisia,Pieris rapae,M,Yes,Yes,Pra2,1,NA,10-Jul-08
+Pr_2024,36.12,9.66,Tunisia,Pieris rapae,M,Yes,Yes,Pra25,1,1.3,28-May-12
+Pr_2025,36.42,9.92,Tunisia,Pieris rapae,M,Yes,Yes,Pra25,1,1.3,28-May-12
+Pr_2022,34.35,8.33,Tunisia,Pieris rapae,M,Yes,Yes,Pra25,1,1.3,29-May-12
+Pr_2023,35.43,9.57,Tunisia,Pieris rapae,F,Yes,Yes,Pra25,1,1.3,29-May-12
+Pr_2020,33.41,9.01,Tunisia,Pieris rapae,M,Yes,Yes,Pra1,1,1.3,30-May-12
+Pr_2021,33.94,8.17,Tunisia,Pieris rapae,F,Yes,Yes,Pra2,1,1.3,30-May-12
+Pr_2019,35.41,8.6,Tunisia,Pieris rapae,M,Yes,Yes,Pra25,1,1.3,31-May-12
+Pr_1922,37.16,10.11,Tunisia,Pieris rapae,M,Yes,Yes,Pra25,1,1.3,4-Jul-13
+Pr_1921,37.25,9.79,Tunisia,Pieris rapae,M,Yes,Yes,Pra2,1,1.3,5-Jul-13
+Pr_1923,35.93,8.54,Tunisia,Pieris rapae,F,Yes,Yes,Pra2,1,1.3,8-Jul-13
+Pr_1278,36.86,30.77,Turkey,Pieris rapae,F,Yes,Yes,Pra36,2,2.9,6-Jun-15
+Pr_1269,36.86,30.77,Turkey,Pieris rapae,M,Yes,Yes,Pra21,2,2.9,14-Jun-15
+Pr_1270,36.86,30.77,Turkey,Pieris rapae,M,Yes,Yes,Pra1,2,2.9,14-Jun-15
+Pr_1275,36.86,30.77,Turkey,Pieris rapae,M,Yes,Yes,Pra2,2,2.9,14-Jun-15
+Pr_1276,36.86,30.77,Turkey,Pieris rapae,F,Yes,Yes,Pra2,2,2.9,14-Jun-15
+Pr_1279,36.86,30.77,Turkey,Pieris rapae,M,Yes,Yes,Pra1,2,2.9,14-Jun-15
+Pr_1273,36.86,30.77,Turkey,Pieris rapae,M,No,Yes,Pra2,NA,NA,14-Jun-15
+Pr_1274,36.86,30.77,Turkey,Pieris rapae,M,No,Yes,Pra45,NA,NA,14-Jun-15
+Pr_1271,36.86,30.77,Turkey,Pieris rapae,F,Yes,No,NA,NA,NA,21-Jun-15
+Pr_1272,36.86,30.77,Turkey,Pieris rapae,M,Yes,Yes,Pra1,2,2.9,21-Jun-15
+Pr_1969,50.18,36.4,Ukraine,Pieris rapae,M,Yes,Yes,Pra2,2,NA,28-Apr-14
+Pr_1968,51.01,31.9,Ukraine,Pieris rapae,F,Yes,Yes,Pra2,2,NA,4-Oct-14
+Pr_705,21.41,-157.8,USA,Pieris rapae,M,Yes,No,NA,NA,NA,2014
+Pr_700,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_701,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_702,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_703,21.41,-157.8,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.3,2014
+Pr_704,21.41,-157.8,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.3,2014
+Pr_706,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_707,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_708,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_709,21.41,-157.8,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,2014
+Pr_803,36.17,-79.56,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,2014
+Pr_885,42.61,-85.64,USA,Pieris rapae,M,Yes,No,NA,NA,NA,26-May-13
+Pr_1,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_10,42.61,-85.64,USA,Pieris rapae,F,Yes,Yes,Pra27,4,4.3,26-May-13
+Pr_2,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_3,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.3,26-May-13
+Pr_4,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.3,26-May-13
+Pr_5,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_6,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_7,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_8,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,26-May-13
+Pr_9,42.61,-85.64,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.3,26-May-13
+Pr_16,43.13,-85.28,USA,Pieris rapae,M,Yes,No,NA,NA,NA,29-May-13
+Pr_12,41.78,-90.21,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,10-Jun-13
+Pr_14,41.37,-90.54,USA,Pieris rapae,M,Yes,Yes,Pra2,NA,NA,10-Jun-13
+Pr_1387,41.71,-86.24,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,15-Jun-13
+Pr_1125,40.42,-89.83,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,16-Jun-13
+Pr_1134,40.42,-89.83,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.3,16-Jun-13
+Pr_1394,40.39,-89.89,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,16-Jun-13
+Pr_1403,40.39,-89.91,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,16-Jun-13
+Pr_359,39.23,-120.76,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,23-May-14
+Pr_20,40.39,-89.92,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,23-May-14
+Pr_363,39.48,-118.67,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,28-May-14
+Pr_361,39.52,-118.53,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,28-May-14
+Pr_364,39.52,-118.53,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,28-May-14
+Pr_357,38.82,-119.78,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,4-Jun-14
+Pr_392,38.6,-121.47,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.1,11-Jun-14
+Pr_900,38.92,-77.4,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,11-Jun-14
+Pr_416,38.58,-121.75,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,12-Jun-14
+Pr_417,38.58,-121.75,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,12-Jun-14
+Pr_358,39.51,-119.82,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,15-Jun-14
+Pr_28,41.71,-86.25,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,16-Jun-14
+Pr_899,38.92,-77.4,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,18-Jun-14
+Pr_898,38.92,-77.4,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,23-Jun-14
+Pr_710,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,24-Jun-14
+Pr_84,33.91,-83.19,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,25-Jun-14
+Pr_81,33.92,-83.27,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,25-Jun-14
+Pr_40,40.05,-77.96,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,26-Jun-14
+Pr_41,40.05,-77.96,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,26-Jun-14
+Pr_43,40.05,-77.96,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,26-Jun-14
+Pr_51,40.2,-76.68,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,26-Jun-14
+Pr_57,40.2,-76.69,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.2,26-Jun-14
+Pr_59,40.2,-76.68,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,26-Jun-14
+Pr_713,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,26-Jun-14
+Pr_42,40.05,-77.96,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,26-Jun-14
+Pr_50,40.2,-76.7,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,26-Jun-14
+Pr_56,40.2,-76.69,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,26-Jun-14
+Pr_717,38.29,-85.63,USA,Pieris rapae,F,No,Yes,Pra27,NA,NA,27-Jun-14
+Pr_896,38.92,-77.4,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.2,30-Jun-14
+Pr_897,38.92,-77.4,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,30-Jun-14
+Pr_718,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,1-Jul-14
+Pr_720,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,2-Jul-14
+Pr_722,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra27,4,4.6,4-Jul-14
+Pr_75,36.89,-81.37,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,7-Jul-14
+Pr_76,36.89,-81.37,USA,Pieris rapae,M,Yes,Yes,Pra5,4,4.2,7-Jul-14
+Pr_65,41.41,-81.7,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.3,9-Jul-14
+Pr_69,41.05,-81.86,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,9-Jul-14
+Pr_67,41.88,-80,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,11-Jul-14
+Pr_68,41.88,-80,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,11-Jul-14
+Pr_902,38.92,-77.4,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,11-Jul-14
+Pr_62,41.23,-82.12,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,11-Jul-14
+Pr_901,38.92,-77.4,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,11-Jul-14
+Pr_903,38.92,-77.4,USA,Pieris rapae,M,No,Yes,Pra5,NA,NA,11-Jul-14
+Pr_904,38.92,-77.4,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,11-Jul-14
+Pr_729,38.29,-85.63,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,12-Jul-14
+Pr_74,41.15,-81.56,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,12-Jul-14
+Pr_441,38.18,-122.03,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,13-Jul-14
+Pr_442,38.18,-122.03,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,13-Jul-14
+Pr_440,38.18,-122.03,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,13-Jul-14
+Pr_699,46.92,-114.24,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,13-Jul-14
+Pr_151,40.38,-120.55,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,16-Jul-14
+Pr_152,40.38,-120.55,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.1,16-Jul-14
+Pr_154,40.38,-120.55,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,16-Jul-14
+Pr_383,41.76,-72.67,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,18-Jul-14
+Pr_384,41.76,-72.67,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,18-Jul-14
+Pr_386,41.76,-72.67,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,18-Jul-14
+Pr_125,42.24,-122.75,USA,Pieris rapae,M,Yes,Yes,Pra2,5,NA,18-Jul-14
+Pr_131,42.24,-122.75,USA,Pieris rapae,M,Yes,Yes,Pra3,5,NA,18-Jul-14
+Pr_121,41.3,-122.32,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,18-Jul-14
+Pr_132,42.24,-122.75,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,18-Jul-14
+Pr_385,41.76,-72.67,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,18-Jul-14
+Pr_168,45.37,-120.78,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.8,20-Jul-14
+Pr_169,45.37,-120.78,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,20-Jul-14
+Pr_170,45.37,-120.78,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.8,20-Jul-14
+Pr_171,45.77,-119.25,USA,Pieris rapae,F,Yes,Yes,Pra1,4,4.8,21-Jul-14
+Pr_176,45.77,-119.25,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_177,45.77,-119.25,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_178,45.77,-119.25,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.8,21-Jul-14
+Pr_179,45.77,-119.25,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_180,45.77,-119.25,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.8,21-Jul-14
+Pr_181,45.77,-119.25,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.8,21-Jul-14
+Pr_182,45.77,-119.25,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.8,21-Jul-14
+Pr_183,45.77,-119.25,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_195,45.96,-121.47,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_196,45.96,-121.47,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_199,45.96,-121.47,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,21-Jul-14
+Pr_200,45.96,-121.47,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.8,21-Jul-14
+Pr_172,45.77,-119.25,USA,Pieris rapae,F,Yes,Yes,Pra4,NA,NA,21-Jul-14
+Pr_174,45.77,-119.25,USA,Pieris rapae,F,No,Yes,Pra29,NA,NA,21-Jul-14
+Pr_202,48.35,-120.04,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.8,24-Jul-14
+Pr_204,48.35,-120.04,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.8,24-Jul-14
+Pr_208,48.5,-119.5,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,24-Jul-14
+Pr_209,48.5,-119.5,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,24-Jul-14
+Pr_221,47.76,-118.71,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.8,25-Jul-14
+Pr_231,47.76,-118.71,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,25-Jul-14
+Pr_249,47.35,-118.02,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.8,25-Jul-14
+Pr_250,47.35,-118.02,USA,Pieris rapae,M,Yes,Yes,Pra4,4,4.8,25-Jul-14
+Pr_447,39.27,-120.35,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,26-Jul-14
+Pr_448,39.27,-120.35,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,26-Jul-14
+Pr_79,35.06,-83.43,USA,Pieris rapae,M,Yes,Yes,Pra28,NA,NA,26-Jul-14
+Pr_391,41.76,-72.67,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,27-Jul-14
+Pr_738,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,27-Jul-14
+Pr_739,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra4,4,4.6,27-Jul-14
+Pr_254,41.73,-115.9,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,27-Jul-14
+Pr_117,45.32,-92.53,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,27-Jul-14
+Pr_322,38.96,-95.24,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,27-Jul-14
+Pr_323,38.96,-95.24,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,27-Jul-14
+Pr_325,38.9,-95.24,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,27-Jul-14
+Pr_326,38.88,-95.25,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,27-Jul-14
+Pr_369,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_370,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_371,39.69,-119.83,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_372,39.69,-119.83,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_373,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_374,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_375,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_377,39.69,-119.83,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.2,28-Jul-14
+Pr_340,38.94,-95.34,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,28-Jul-14
+Pr_376,39.69,-119.83,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,28-Jul-14
+Pr_744,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,9-Aug-14
+Pr_747,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,12-Aug-14
+Pr_256,39.04,-108.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,14-Aug-14
+Pr_257,39.04,-108.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,14-Aug-14
+Pr_261,39.04,-108.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,14-Aug-14
+Pr_748,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,14-Aug-14
+Pr_255,39.04,-108.53,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,14-Aug-14
+Pr_1452,38.15,-121.67,USA,?,?,Yes,No,NA,NA,NA,16-Aug-14
+Pr_1453,38.15,-121.67,USA,Colias spp,?,Yes,Yes,Colias_1,NA,NA,16-Aug-14
+Pr_88,38.15,-121.67,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.1,16-Aug-14
+Pr_92,38.12,-121.33,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,16-Aug-14
+Pr_95,38.12,-121.33,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.1,16-Aug-14
+Pr_115,37.75,-122.42,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,17-Aug-14
+Pr_116,37.75,-122.42,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,17-Aug-14
+Pr_750,38.29,-85.63,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,19-Aug-14
+Pr_773,45.19,-70.16,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,19-Aug-14
+Pr_751,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,21-Aug-14
+Pr_752,38.29,-85.63,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,23-Aug-14
+Pr_475,37.71,-122.4,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,26-Aug-14
+Pr_514,44.89,-68.66,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,29-Aug-14
+Pr_518,44.89,-68.66,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,29-Aug-14
+Pr_544,44.9,-67.13,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,29-Aug-14
+Pr_487,44.7,-69.56,USA,Pieris rapae,F,Yes,No,NA,4,4.1,30-Aug-14
+Pr_473,42.31,-84.04,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,31-Aug-14
+Pr_474,42.31,-84.04,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,31-Aug-14
+Pr_540,43.59,-70.21,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,31-Aug-14
+Pr_570,43.75,-70.3,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,31-Aug-14
+Pr_909,42.06,-87.84,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,1-Sep-14
+Pr_908,42.06,-87.84,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,1-Sep-14
+Pr_496,44.39,-73.09,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,2-Sep-14
+Pr_507,44.39,-73.09,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,2-Sep-14
+Pr_568,41.68,-86.22,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,5-Sep-14
+Pr_531,41.68,-85.59,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.3,6-Sep-14
+Pr_538,41.68,-85.67,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.3,6-Sep-14
+Pr_589,45,-67.44,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,6-Sep-14
+Pr_590,45,-67.44,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,6-Sep-14
+Pr_525,41.62,-85.79,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,6-Sep-14
+Pr_593,37.35,-122.03,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,9-Sep-14
+Pr_759,43.75,-70.48,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,12-Sep-14
+Pr_1014,44.24,-69.36,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,14-Sep-14
+Pr_1016,44.24,-69.36,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,14-Sep-14
+Pr_905,38.92,-77.4,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,19-Sep-14
+Pr_906,38.92,-77.4,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,19-Sep-14
+Pr_1022,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,21-Sep-14
+Pr_1023,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,21-Sep-14
+Pr_1024,35.92,-79.07,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,21-Sep-14
+Pr_614,39.32,-77.28,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,21-Sep-14
+Pr_615,39.32,-77.28,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,21-Sep-14
+Pr_761,43.7,-70.1,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,26-Sep-14
+Pr_1046,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,2-Oct-14
+Pr_1048,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,2-Oct-14
+Pr_1049,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,2-Oct-14
+Pr_1027,36.23,-79.18,USA,Pieris rapae,F,Yes,No,NA,NA,NA,3-Oct-14
+Pr_1026,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,3-Oct-14
+Pr_1030,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,3-Oct-14
+Pr_1032,35.92,-79.07,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,3-Oct-14
+Pr_1033,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.2,3-Oct-14
+Pr_1050,36.23,-79.18,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.2,6-Oct-14
+Pr_1038,36.23,-79.18,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,6-Oct-14
+Pr_763,37.71,-122.49,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,11-Oct-14
+Pr_764,37.71,-122.49,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,11-Oct-14
+Pr_765,37.71,-122.48,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,11-Oct-14
+Pr_766,37.71,-122.48,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,11-Oct-14
+Pr_768,37.7,-122.47,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,18-Oct-14
+Pr_769,37.72,-122.48,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,18-Oct-14
+Pr_771,37.7,-122.47,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,18-Oct-14
+Pr_772,37.71,-122.47,USA,Pieris rapae,M,Yes,Yes,Pra2,5,5.1,18-Oct-14
+Pr_767,37.7,-122.47,USA,Pieris rapae,M,No,Yes,Pra2,NA,NA,18-Oct-14
+Pr_770,37.71,-122.47,USA,Pieris rapae,F,Yes,Yes,Pra31,NA,NA,18-Oct-14
+Pr_1141,40.41,-80.1,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,1-Dec-14
+Pr_1150,39.16,-108.75,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,22-Mar-15
+Pr_1149,39.16,-108.75,USA,Pieris rapae,M,Yes,Yes,Pra52,4,4.4,13-Apr-15
+Pr_1143,39.07,-108.46,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.4,20-Apr-15
+Pr_1146,39.07,-108.46,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,20-Apr-15
+Pr_1206,32.68,-117.18,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.7,22-Jun-15
+Pr_1207,32.68,-117.18,USA,Pieris rapae,M,Yes,Yes,Pra5,4,4.7,22-Jun-15
+Pr_1205,32.68,-117.18,USA,Pieris rapae,"M
+",No,Yes,Pra3,NA,NA,22-Jun-15
+Pr_1230,34.01,-118.28,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.7,11-Jul-15
+Pr_1231,34.01,-118.28,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.7,11-Jul-15
+Pr_1468,47.36,-122.1,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.8,22-Jul-15
+Pr_1488,43.32,-91.82,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,23-Jul-15
+Pr_1491,43.44,-92.01,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,27-Jul-15
+Pr_1353,43.12,-73.7,USA,Pieris oleracea,F,Yes,Yes,Pol_1,NA,NA,28-Jul-15
+Pr_1354,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra36,4,4.1,28-Jul-15
+Pr_1478,43.32,-91.81,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,28-Jul-15
+Pr_1352,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.1,30-Jul-15
+Pr_1497,43.44,-92.39,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,30-Jul-15
+Pr_1350,43.12,-73.7,USA,Pieris rapae,M,No,Yes,Pra5,NA,NA,2-Aug-15
+Pr_1466,47.36,-122.1,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.8,3-Aug-15
+Pr_1347,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra2,4,4.1,8-Aug-15
+Pr_1348,43.12,-73.7,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,8-Aug-15
+Pr_1349,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.1,8-Aug-15
+Pr_1355,43.12,-73.7,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.1,8-Aug-15
+Pr_1356,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.1,8-Aug-15
+Pr_1346,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,8-Aug-15
+Pr_1351,43.12,-73.7,USA,Pieris rapae,F,Yes,Yes,Pra2,NA,NA,8-Aug-15
+Pr_1427,40.48,-96.71,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,22-Aug-15
+Pr_1428,40.48,-96.71,USA,Pieris rapae,F,Yes,Yes,Pra5,NA,NA,22-Aug-15
+Pr_1429,40.48,-96.71,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,22-Aug-15
+Pr_1430,40.48,-96.71,USA,Pieris rapae,M,Yes,Yes,Pra54,NA,NA,22-Aug-15
+Pr_1431,40.48,-96.71,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,22-Aug-15
+Pr_1844,29.63,-82.42,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.9,24-Aug-15
+Pr_1432,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra35,4,4.1,25-Aug-15
+Pr_1434,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,25-Aug-15
+Pr_1435,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra5,4,4.1,25-Aug-15
+Pr_1436,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,25-Aug-15
+Pr_1437,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,25-Aug-15
+Pr_1438,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra35,4,4.1,25-Aug-15
+Pr_1439,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.1,25-Aug-15
+Pr_1440,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra27,4,4.1,25-Aug-15
+Pr_1209,38.23,-122.64,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.1,25-Aug-15
+Pr_1433,45.11,-64.39,USA,Pieris rapae,F,Yes,Yes,Pra3,NA,NA,25-Aug-15
+Pr_1472,43.41,-91.56,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,14-Sep-15
+Pr_1459,35.63,-86.25,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,19-Sep-15
+Pr_1460,35.63,-86.25,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.6,19-Sep-15
+Pr_1461,35.63,-86.25,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.6,19-Sep-15
+Pr_1496,43.44,-92.39,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,22-Sep-15
+Pr_1800,45.45,-99.34,USA,Pieris rapae,M,Yes,Yes,Pra2,4,4.4,22-Sep-15
+Pr_1801,45.45,-99.34,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,22-Sep-15
+Pr_1802,45.45,-99.34,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,22-Sep-15
+Pr_1803,45.45,-99.34,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,22-Sep-15
+Pr_1804,45.45,-99.34,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.4,22-Sep-15
+Pr_1806,45.45,-99.34,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.4,22-Sep-15
+Pr_1805,45.45,-99.34,USA,Pieris rapae,F,No,Yes,Pra55,NA,NA,22-Sep-15
+Pr_2081,20.2,-155.74,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,3-May-16
+Pr_2083,20.2,-155.74,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,3-May-16
+Pr_2084,20.2,-155.74,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,3-May-16
+Pr_2087,42.32,-83.24,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,4-May-16
+Pr_2082,19.49,-155.39,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,4-May-16
+Pr_2076,19.22,-155.48,USA,Pieris rapae,M,Yes,Yes,Pra3,5,5.3,5-May-16
+Pr_2078,20.93,-156.67,USA,Pieris rapae,F,Yes,Yes,Pra1,5,5.3,10-May-16
+Pr_2080,20.93,-156.67,USA,Pieris rapae,F,Yes,Yes,Pra3,5,5.3,10-May-16
+Pr_1873,45.53,-84.47,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,25-May-16
+Pr_1872,45.53,-84.47,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,27-May-16
+Pr_1834,30.98,-84.53,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1835,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1836,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1837,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1838,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1839,30.98,-84.53,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1840,30.98,-84.53,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1841,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1842,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1843,30.98,-84.53,USA,Pieris rapae,M,Yes,Yes,Pra3,4,4.9,5-Jun-16
+Pr_1870,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,28-Jun-16
+Pr_1871,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,28-Jun-16
+Pr_1874,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,29-Jun-16
+Pr_1868,45.53,-84.47,USA,Pieris rapae,F,Yes,Yes,Pra4,4,NA,4-Jul-16
+Pr_1869,45.53,-84.47,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,4-Jul-16
+Pr_1866,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,5-Jul-16
+Pr_1867,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,5-Jul-16
+Pr_1864,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,6-Jul-16
+Pr_1865,45.53,-84.47,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,9-Jul-16
+Pr_1860,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,10-Aug-16
+Pr_1861,45.53,-84.47,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,10-Aug-16
+Pr_1875,40.68,-99.83,USA,Pieris rapae,M,Yes,Yes,Pra3,NA,NA,12-Aug-16
+Pr_1876,35.27,-86.46,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,16-Aug-16
+Pr_1859,45.53,-84.47,USA,Pieris rapae,F,No,Yes,Pra3,NA,NA,16-Aug-16
+Pr_1856,40.75,-89.57,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,20-Aug-16
+Pr_1899,40.02,-105.23,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,12-Sep-16
+Pr_1902,40.58,-105.08,USA,Pieris rapae,F,No,Yes,Pra14,NA,NA,15-Sep-16
+Pr_1877,37.35,-122.02,USA,Pieris rapae,M,Yes,Yes,Pra3,5,NA,20-Sep-16
+Pr_1895,37.24,-80.46,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,21-Sep-16
+Pr_1896,37.24,-80.46,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,22-Sep-16
+Pr_1897,37.24,-80.46,USA,Pieris rapae,M,No,Yes,Pra3,NA,NA,23-Sep-16
+Pr_1901,40.58,-105.08,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,1-Oct-16
+Pr_1142,33.61,-117.64,USA,Pieris rapae,F,Yes,Yes,Pra3,4,4.7,4/?/15
+Pr_63,33.87,-83.11,USA,Pieris rapae,F,Yes,Yes,Pra3,4,NA,5/?/2014
+Pr_1454,38.85,-79.49,USA,Pieris virginiensis,M,Yes,No,NA,NA,NA,5/?/2015
+Pr_1455,38.85,-79.49,USA,Pieris virginiensis,F,Yes,No,NA,NA,NA,5/?/2015
+Pr_1456,38.85,-79.49,USA,Pieris virginiensis,M,Yes,No,NA,NA,NA,5/?/2015
+Pr_1457,38.85,-79.49,USA,Pieris virginiensis,F,Yes,No,NA,NA,NA,5/?/2015
+Pr_1458,38.85,-79.49,USA,Pieris virginiensis,M,Yes,No,NA,NA,NA,5/?/2015
+Pr_347,38.96,-95.24,USA,Pieris rapae,M,Yes,Yes,Pra3,4,NA,7/29/2014-08/04/2014

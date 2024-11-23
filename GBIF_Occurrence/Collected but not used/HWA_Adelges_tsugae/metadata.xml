@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+        packageId="10.15468/dl.n4ks6k"  system="http://gbif.org" scope="system"
+  xml:lang="en">
+
+<dataset>
+        <alternateIdentifier>0105455-220831081235567</alternateIdentifier>
+    <title>GBIF Occurrence Download 10.15468/dl.n4ks6k</title>
+    <creator>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </creator>
+    <metadataProvider>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>    </metadataProvider>
+      <pubDate>
+      2022-10-19
+      </pubDate>
+    <language>ENGLISH</language>
+    <abstract>
+        <para>A dataset containing all occurrences available in GBIF matching the query:
+{
+  &quot;and&quot; : [
+    &quot;Country is United States of America&quot;,
+    &quot;DatasetKey is one of (Mohonk Preserve Forest Health Monitoring Data, iNaturalist Research-grade Observations, Mohonk Preserve Historical Observational Biodiversity Data, Entomology Division, Yale Peabody Museum, International Barcode of Life project (iBOL), Mohonk Preserve Forest Health Monitoring Data)&quot;,
+    &quot;Geometry POLYGON((-94 -90,180 -90,180 90,-94 90,-94 -90))&quot;,
+    &quot;HasCoordinate is true&quot;,
+    &quot;HasGeospatialIssue is false&quot;,
+    &quot;TaxonKey is Adelges tsugae Annand, 1924&quot;
+  ]
+}
+The dataset includes records from the following constituent datasets. The full metadata for each constituent is also included in this archive:
+19 records from Entomology Division, Yale Peabody Museum
+26 records from International Barcode of Life project (iBOL)
+39 records from Mohonk Preserve Forest Health Monitoring Data
+39 records from Mohonk Preserve Forest Health Monitoring Data
+221 records from Mohonk Preserve Historical Observational Biodiversity Data
+1932 records from iNaturalist Research-grade Observations</para>
+    </abstract>
+      <contact>
+    <individualName>
+          <surName>GBIF Download Service</surName>
+    </individualName>
+<electronicMailAddress>support@gbif.org</electronicMailAddress>      </contact>
+
+</dataset>
+
+<additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>2022-10-19T18:33:10Z</dateStamp>
+      <citation identifier="10.15468/dl.n4ks6k">GBIF Occurrence Download 10.15468/dl.n4ks6k</citation>
+              <physical>
+                  <objectName>Darwin Core Archive</objectName>
+                  <characterEncoding>UTF-8</characterEncoding>
+                  <dataFormat>
+                      <externallyDefinedFormat>
+                          <formatName>Darwin Core Archive</formatName>
+                      </externallyDefinedFormat>
+                  </dataFormat>
+                  <distribution>
+                      <online>
+                          <url function="download">https://api.gbif.org/v1/occurrence/download/request/0105455-220831081235567.zip</url>
+                      </online>
+                  </distribution>
+              </physical>
+      </gbif>
+    </metadata>
+</additionalMetadata>
+
+</eml:eml>
